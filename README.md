@@ -1,7 +1,7 @@
-#LINOBYTE
+# LINOBYTE
 
 
-## TO DOs
+## To dos
 
 1. Pick a coil /coil size
 2. Sketch Mechanical support
