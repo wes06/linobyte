@@ -37,7 +37,7 @@ http://www.ciphersbyritter.com/MARK8/MAGCORE/MAGCORE.HTM
 ROD ROM
 http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/
 
-https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-5530843-0/A31722-ND/770548
+
 
 
 
@@ -52,3 +52,6 @@ https://www.mouser.at/ProductDetail/Nexperia/74HC7541PW118?qs=sGAEpiMZZMtOwpHsRT
 3 to 8 decoder
 74HC138
 https://www.mouser.at/datasheet/2/302/74HC_HCT138-1148685.pdf
+
+Card edge 20 Pos connector
+https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-5530843-0/A31722-ND/770548
