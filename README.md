@@ -3,11 +3,14 @@
 
 ## To dos
 
-1. Pick a coil /coil size
+1. Pick a coil /coil size ()
 2. Sketch Mechanical support
 
 
-3. Decide how to drive the coils
+3. Decide how to drive the coils (VCO + LSD?)
+4. Switch for external coils
+5. Footprint for magnetic latch switch (magnet, 3xpogo, magnet: pcb switches and 3way and gate?) 
+
 
 
 
@@ -34,12 +37,14 @@ http://drhart.ucoz.com/index/core_memory/0-123
 http://www.ciphersbyritter.com/MARK8/MAGCORE/MAGCORE.HTM
 
 
+http://qrp.gr/coreROM/
+
 ROD ROM
 http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/
 
 
-
-
+Neil on how transformers work.
+https://electronics.stackexchange.com/a/221279/61257
 
 
 ## BOM
