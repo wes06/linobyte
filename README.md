@@ -60,6 +60,10 @@ http://www.ti.com/lit/ug/tidu020a/tidu020a.pdf
 Potential coils: 9mm x 16mm x 5mm (inner, outer, thickness)  
 https://www2.mouser.com/Passive-Components/Ferrites/Ferrite-Toroids-Ferrite-Rings/_/N-fb8t7Z1yzvvqx?P=1ya7hnoZ1z0vsmwZ1z0vsssZ1z0vsa5Z1z0vsltZ1z0vrn7&Rl=fb8t7ZerbuZ1yxgwg4Z1yzmqroSGT&Ns=Inside%20Diameter|1
 
+AP331  
+Single Differential Comparator  
+https://www2.mouser.com/ProductDetail/Diodes-Incorporated/AP331AWG-7?qs=sGAEpiMZZMuayl%2fEk2kXcbfp56RBiQa%252bBYTJGtoHiWw%3d
+
 Kemet ESD - R Series
 
 Schmitt Trigger Octal Non Inverting  
