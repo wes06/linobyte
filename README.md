@@ -3,13 +3,11 @@
 
 ## Motivation and Description
 
-As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete more and more complex tasks without having to focus so much on understanding the nuances of the machine. While this movement overall is very positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Another negative aspect is that, by negleting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseeded their ancestors and what are their pitfalls. Its very important knowledge for those who design possible futures.
+As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Another negative aspect is that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and chars work, with a hands on experience of creating Core Rope ROMs: read-only memories that were written by weaving an enameled copper wire through ferrite cores. 
 
 The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character, she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit) and seventh bit have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check wether the bits were correctly set and proceed or correct if necessary.
-
-
 
 
 
