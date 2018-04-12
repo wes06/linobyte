@@ -1,6 +1,9 @@
 # LINOBYTE
 
 
+![Preliminary Render](./Img/Renders/sketch2.png)  
+
+
 ## Motivation and Description
 
 As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Another negative aspect is that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
@@ -25,10 +28,7 @@ The whole process is quite straightforward, and the result is immediate: the use
 
 
 
-## Preliminary render
 
-
-![Preliminary Render](./Img/Renders/sketch2.png)
 
 ## Preliminary Functional Block Diagram
 
