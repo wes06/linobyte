@@ -10,6 +10,21 @@ Its with these preocupations in mind that Linobyte came into existence. It conci
 The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character, she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit) and seventh bit have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
 
 
+## Important dates:
+
+- finish the "Char" PCB design (3rd week of April)
+- Sending the Char Gerber files to the manufacturer (4th week of April)
+- Finishing the "Word" (Main board) PCB design (4th week of April)
+- Send the "Word" Gerber files to the manufacturer (4th week of April)
+- Finish the Bill of Materials and order the components from Mouser (End of April)
+- Assemble the char boards (1st of May)
+- Assembble the word boards (2nd of May)
+- Write the firmware and test the boards. (3rd week of May)
+- Test the boards as HID Keyboard (3rd week of May)
+- Decide if I want to build an external custom display (e-ink, 16 segments, 5x7 array, etc)
+
+
+
 ## Preliminary render
 
 
@@ -41,7 +56,7 @@ I personally really wanted to experiment with e-ink displays (Should be doable b
 
 ##### Power supplies (not drawn)
 
-Microcontrollers and ICs in general will use 3.3V. I might want to power the coil drivers with 5V, 12V or 24V depending on how efficient the transformers are. I plan to power the whole thing via a USB port and have the appropriate buck and boost converters on the board.
+Microcontrollers and ICs in general will use 3.3V. I might want to power the coil drivers with 5V, 12V or 24V depending on how efficient the transformers are. I plan to power the whole thing via a USB port and have the appropriate buck and boost converters on the board. I will avoid LDOs because due to the clamp diodes to 3.3V or 5V on the rectifiers, the regulator will probably need to sink some current.
 
 
 ## Simulations
@@ -51,7 +66,19 @@ Microcontrollers and ICs in general will use 3.3V. I might want to power the coi
 ![](./Img/Simulation/linobyte-circuitlab-current.png)
 
 
-## To dos
+## PCBs
+
+As of 10/April.  
+
+2D view:  
+
+![](./Img/PCB/PCB-2D.png)  
+
+3d view:  
+![](./Img/PCB/PCB-3D.png)
+
+
+## Minor To dos
 
 1. Sketch weave "needle" and connection, can't use magnets cause ferrites are magnetic, minor annoyance when weaving..
 2. Footprint for magnetic latch switch (magnet, 3xpogo, magnet: pcb switches and 3way and gate?), and/or find out how to attack magnets to PCBs.
