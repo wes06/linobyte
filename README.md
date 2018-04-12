@@ -12,9 +12,16 @@ Its with these preocupations in mind that Linobyte came into existence. It conci
 
 The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character, she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit) and seventh bit have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
 
+(So, in essence, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
+
 ASCII table:
 
-![ASCII table](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif)
+<img src="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif" width="400">
+
+Core memory experiment from http://www.timui.org/2015/
+
+<img src="http://3.bp.blogspot.com/--asz_UrCd6c/VbUkzhFK_yI/AAAAAAAAZhI/DOXbYy7dYb0/s1600/DSCF0517.JPG" width="250">
+
 
 
 ## Important dates:
