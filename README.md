@@ -44,6 +44,11 @@ I personally really wanted to experiment with e-ink displays (Should be doable b
 Microcontrollers and ICs in general will use 3.3V. I might want to power the coil drivers with 5V, 12V or 24V depending on how efficient the transformers are. I plan to power the whole thing via a USB port and have the appropriate buck and boost converters on the board.
 
 
+## Simulations
+
+![](./Img/Simulation/linobyte-circuitlab-schematic.png)
+![](./Img/Simulation/linobyte-circuitlab-voltage.png)
+![](./Img/Simulation/linobyte-circuitlab-current.png)
 
 
 ## To dos
