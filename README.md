@@ -16,14 +16,23 @@ The whole process is quite straightforward, and the result is immediate: the use
 
 ![A example](./Img/Renders/sketch_weaved_overlaid.png) 
 
-ASCII table:
+ASCII table:  
+(I'm aware that ASCII chars only require 7 bits and not 8)
 
 <img src="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif" width="600">
 
 Core memory experiment from http://www.timui.org/2015/
 
-<img src="http://3.bp.blogspot.com/--asz_UrCd6c/VbUkzhFK_yI/AAAAAAAAZhI/DOXbYy7dYb0/s1600/DSCF0517.JPG" width="250">
+<img src="http://3.bp.blogspot.com/--asz_UrCd6c/VbUkzhFK_yI/AAAAAAAAZhI/DOXbYy7dYb0/s1600/DSCF0517.JPG" width="300">
 
+
+## Relevance to Ars Electronica 2018 - Error:
+
+By translating machine possibilities into "human" affordances and human actions into machine commands, interfaces are one of the main actors when preventing, communicating and correcting errors. Exploring old interfaces - I call core ROM an interface because at some points it is written by an human, when creating the data and when weaving the wire - that are at a much lower level (closer to the hardware) lets us deal with errors that we no longer have to deal with on a daily basis.
+
+To the extent that you have to become partly machine to interact with a machine, new interfaces which make machines closer to human (dealing with letters, words, instead of bits and bytes) allows us to keep being human while dealing with complex tasks.
+
+Making regular users go through the effort of becoming more machine to write a simple word might bring some appreciation into the quantity and quality of the safety nets that we have in our devices today.
 
 
 ## Important dates:
