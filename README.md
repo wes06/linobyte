@@ -3,14 +3,38 @@
 
 ![Preliminary Render](./Img/Renders/sketch2.png)  
 
+## Table of Contents
 
-## Motivation and Description
+* [Motivation and Description](#motivation-description)
+* [How it works](#how-it-works)
+* [Relevance to Ars Electronica 2018](#relevance)
+* [Important Dates](#dates)
+* [Preliminary Functional Block Diagram](#block-diagram)
+* [Simulations](#simulations)
+* [PCBs](#pcbs)
+* [Naming](#naming)
+* [To Dos](#to-dos)
+
+
+## <a name="motivation-description"></a>Motivation and Description
 
 As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Another negative aspect is that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and [chars](https://en.wikipedia.org/wiki/Character_(computing)) work, with a hands on experience of creating [Core Rope ROMs](https://en.wikipedia.org/wiki/Core_rope_memory): read-only memories that were written by weaving an enameled copper wire through ferrite cores. 
 
-The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character (see image below), she/he checks the ASCII table, to see that "A" is 65 in decimal and 01000001 in binary. Thus, the first (least significant bit, bit 0) and seventh bit (bit 6) have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
+## <a name="how-it-works"></a>How it works
+
+The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written.  
+
+So, if the user wants to write the "A" character, the steps should be the following:
+
+1. Find out the binary value in ASCII of the "A" character by checking on the ASCII table (see image below). "A" in ASCII is 65 in decimal and 01000001 in binary.
+2. Figure out which bits have to be set in the "Char" board: the first bit (least significant), or bit 0. And the seventh bit, bit 6. (bits are being counted from the right to left)
+3. Weave a wire through the respective coils: zero and six.
+4. Connect the wire to the final position (will be indicated on the board)
+5. Check the character on a screen and correct or proceed to the next character.
+
+
 
 (So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
 
@@ -26,14 +50,14 @@ Core memory experiment from http://www.timui.org/2015/
 <img src="http://3.bp.blogspot.com/--asz_UrCd6c/VbUkzhFK_yI/AAAAAAAAZhI/DOXbYy7dYb0/s1600/DSCF0517.JPG" width="300">
 
 
-## Relevance to Ars Electronica 2018 - Error:
+## <a name="relevance"></a>Relevance to Ars Electronica 2018 - Error:
 
-By translating machine possibilities into "human" affordances and human actions into machine commands, interfaces are one of the main actors when preventing, communicating and correcting errors. Exploring old interfaces - I call core ROM an interface because at some points it is written by an human, when creating the data and when weaving the wire - that are at a much lower level (closer to the hardware) lets us deal with errors that we no longer have to deal with on a daily basis.
+By translating machine possibilities into "human" affordances and human actions into machine commands, interfaces are one of the main actors when preventing, communicating and correcting errors. Exploring old interfaces that are at a much lower level (closer to the hardware) lets us deal with errors that we no longer have to deal with on a daily basis - I call core ROM an interface because at some points it is written by an human, when creating the data and when weaving the wire.
 
 To the extent that you have to become partly machine to interact with a machine, new interfaces which make machines closer to human (dealing with letters, words, instead of bits and bytes) allows us to keep being human while dealing with complex tasks. So, making regular users go through the effort of becoming more machine to write a simple word might bring some appreciation into the quantity and quality of the safety nets that we have in our devices today.
 
 
-## Important dates:
+## <a name="dates"></a>Important dates:
 
 - finish the "Char" PCB design (3rd week of April)
 - Sending the Char Gerber files to the manufacturer (4th week of April)
@@ -50,7 +74,7 @@ To the extent that you have to become partly machine to interact with a machine,
 
 
 
-## Preliminary Functional Block Diagram
+## <a name="block-diagram"></a>Preliminary Functional Block Diagram
 
 ![Preliminary Functional Block Diagram](./Img/Block%20Diagrams/preliminary-block-diagram.png)
 
@@ -79,14 +103,14 @@ I personally really wanted to experiment with e-ink displays (Should be doable b
 Microcontrollers and ICs in general will use 3.3V. I might want to power the coil drivers with 5V, 12V or 24V depending on how efficient the transformers are. I plan to power the whole thing via a USB port and have the appropriate buck and boost converters on the board. I will avoid LDOs because due to the clamp diodes to 3.3V or 5V on the rectifiers, the regulator will probably need to sink some current.
 
 
-## Simulations
+## <a name="simulations"></a>Simulations
 
 ![](./Img/Simulation/linobyte-circuitlab-schematic.png)
 ![](./Img/Simulation/linobyte-circuitlab-voltage.png)
 ![](./Img/Simulation/linobyte-circuitlab-current.png)
 
 
-## PCBs
+## <a name="pcbs"></a>PCBs
 
 As of 10/April.  
 
@@ -98,7 +122,7 @@ As of 10/April.
 ![](./Img/PCB/PCB-3D.png)
 
 
-## Naming
+## <a name="naming"></a>Naming
 
 The name is a pun with the term linotype and byte:
 
@@ -108,13 +132,14 @@ The name is a pun with the term linotype and byte:
 
 
 
-## Minor To dos
+## <a name="to-dos"></a>Minor To dos
 
 1. Sketch weave "needle" and connection, can't use magnets cause ferrites are magnetic, minor annoyance when weaving..
 2. Footprint for magnetic latch switch (magnet, 3xpogo, magnet: pcb switches and 3way and gate?), and/or find out how to attack magnets to PCBs.
 3. Switch for external coils
 4. Decide how to drive the coils (VCO + LSD?)
 5. Add simulations to readme
+6. Add index to readme
 
 
 
