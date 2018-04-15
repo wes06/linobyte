@@ -10,13 +10,15 @@ As computational devices evolve, more tools and interfaces are built between the
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and [chars](https://en.wikipedia.org/wiki/Character_(computing)) work, with a hands on experience of creating [Core Rope ROMs](https://en.wikipedia.org/wiki/Core_rope_memory): read-only memories that were written by weaving an enameled copper wire through ferrite cores. 
 
-The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character, she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit) and seventh bit have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
+The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character (see image below), she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit, bit 0) and seventh bit (bit 6) have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
 
-(So, in essence, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
+(So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
+
+![A example](./Img/Renders/sketch_weaved_overlaid.png) 
 
 ASCII table:
 
-<img src="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif" width="400">
+<img src="https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif" width="600">
 
 Core memory experiment from http://www.timui.org/2015/
 
@@ -31,12 +33,12 @@ Core memory experiment from http://www.timui.org/2015/
 - Finishing the "Word" (Main board) PCB design (4th week of April)
 - Send the "Word" Gerber files to the manufacturer (4th week of April)
 - Finish the Bill of Materials and order the components from Mouser (End of April)
-- Assemble the char boards (1st of May)
-- Assembble the word boards (2nd of May)
-- Write the firmware and test the boards. (3rd week of May)
+- Assemble the char boards (1st week of May)
+- Assemble the word boards (2nd week of May)
+- Test the boards and finish the firmware. (3rd week of May)
 - Test the boards as HID Keyboard (3rd week of May)
 - Decide if I want to build an external custom display (e-ink, 16 segments, 5x7 array, etc)
-
+- Media Archeology workshop (4th week of May)
 
 
 
