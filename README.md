@@ -10,7 +10,7 @@ As computational devices evolve, more tools and interfaces are built between the
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and [chars](https://en.wikipedia.org/wiki/Character_(computing)) work, with a hands on experience of creating [Core Rope ROMs](https://en.wikipedia.org/wiki/Core_rope_memory): read-only memories that were written by weaving an enameled copper wire through ferrite cores. 
 
-The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character (see image below), she/he checks the table, to see that "A" is 65 in decimal, 41 in HEX, and 01000001 in binary. Thus, the first (least significant bit, bit 0) and seventh bit (bit 6) have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
+The whole process is quite straightforward, and the result is immediate: the user can write up to 8 characters - a word, in the Linobyte system. Each character consists of one eight-bit byte. Each core represents one bit, and by weaving the conductive wire through the core center, the user sets a bit as positive. By skipping the core, its set as zero. By connecting the wire to the final position, the byte is written. So, if the user wants to write the "A" character (see image below), she/he checks the ASCII table, to see that "A" is 65 in decimal and 01000001 in binary. Thus, the first (least significant bit, bit 0) and seventh bit (bit 6) have to be set. She/he then proceeds to the next char, and so forth. After each char is set, it appears on a display, so the user can check whether the bits were correctly set and proceed or correct if necessary.
 
 (So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
 
@@ -30,9 +30,7 @@ Core memory experiment from http://www.timui.org/2015/
 
 By translating machine possibilities into "human" affordances and human actions into machine commands, interfaces are one of the main actors when preventing, communicating and correcting errors. Exploring old interfaces - I call core ROM an interface because at some points it is written by an human, when creating the data and when weaving the wire - that are at a much lower level (closer to the hardware) lets us deal with errors that we no longer have to deal with on a daily basis.
 
-To the extent that you have to become partly machine to interact with a machine, new interfaces which make machines closer to human (dealing with letters, words, instead of bits and bytes) allows us to keep being human while dealing with complex tasks.
-
-Making regular users go through the effort of becoming more machine to write a simple word might bring some appreciation into the quantity and quality of the safety nets that we have in our devices today.
+To the extent that you have to become partly machine to interact with a machine, new interfaces which make machines closer to human (dealing with letters, words, instead of bits and bytes) allows us to keep being human while dealing with complex tasks. So, making regular users go through the effort of becoming more machine to write a simple word might bring some appreciation into the quantity and quality of the safety nets that we have in our devices today.
 
 
 ## Important dates:
@@ -96,8 +94,18 @@ As of 10/April.
 
 ![](./Img/PCB/PCB-2D.png)  
 
-3d view:  
+3D view:  
 ![](./Img/PCB/PCB-3D.png)
+
+
+## Naming
+
+The name is a pun with the term linotype and byte:
+
+"Linotype, typesetting machine by which characters are cast in type metal as a complete line rather than as individual characters as on the Monotype typesetting machine."
+
+[Encyclopaedia Britannica on "Linotype"](https://www.britannica.com/technology/Linotype)  
+
 
 
 ## Minor To dos
@@ -117,10 +125,6 @@ Teaching how bits form bytes and then characters with a hands on approach.
 An homage and revival of core rope memories.
 
 Instead of pressing a button to make a letter or touching a screen, you weave a wire. Handwritting, etc
-
-
-
-Pulse generator/ Capacitor in series? / Primary / secondary / full bridge / capacitor / resistor/zener regulator schmitt trigger? / I2C 
 
 
 
