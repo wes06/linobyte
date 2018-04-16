@@ -10,16 +10,16 @@
 * [Relevance to Ars Electronica 2018](#relevance)
 * [Potential presentation formats](#presentation-formats)
 * [Important Dates](#dates)
-* [Preliminary Functional Block Diagram](#block-diagram)
+* [Functional Block Diagram](#block-diagram)
 * [Simulations](#simulations)
 * [PCBs](#pcbs)
 * [Naming](#naming)
 * [To Dos](#to-dos)
-
+* [Glossary](#glossary)
 
 ## <a name="motivation-description"></a>Motivation and Description
 
-As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Another negative aspect is that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
+As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Added to that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and [chars](https://en.wikipedia.org/wiki/Character_(computing)) work, with a hands on experience of creating [Core Rope ROMs](https://en.wikipedia.org/wiki/Core_rope_memory): read-only memories that were written by weaving an enameled copper wire through ferrite cores. 
 
@@ -66,7 +66,9 @@ I see two possible scenarios, one where it is interactive, other where its assem
    2. Object is not fully exposed to the public, but the coils are assembled in a way that you can weave through them without touching the rest of the object. (I mount the coils in an acrylic panel with extended wires for example)
 
 - **Non-interactive**   
-   1. Object is exposed working but out of reach of the public. A video is shown with the process of weaving the wire.
+   1. Object is exposed working but out of reach of the public. A video is shown with the process of weaving the wire. 
+
+For either case, I'm considering making and printing a few ASCII tables and binary conversion charts.
 
 
 ## <a name="dates"></a>Important dates:
@@ -86,7 +88,7 @@ I see two possible scenarios, one where it is interactive, other where its assem
 
 
 
-## <a name="block-diagram"></a>Preliminary Functional Block Diagram
+## <a name="block-diagram"></a>Functional Block Diagram
 
 Coils are out of order in the following diagram:
 
@@ -225,3 +227,15 @@ https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-55308
 e-ink  
 296x128 2.9in  
 https://www.amazon.de/Waveshare-Resolution-Electronic-Controller-interface/dp/B071LGVVL1/ref=sr_1_1?rps=1&ie=UTF8&qid=1523130359&sr=8-1&keywords=e+paper+arduino&refinements=p_76%3A419122031
+
+
+
+
+## <a name="glossary"></a>Glossary
+
+- **ASCII table**: A table of correspondece between a numeric value and a character (American Standard Code for Information Interchange)
+
+- Bit
+- Byte
+- Char
+- **Core**: in this context, the toroid (donut) which is one of the components of the transformer that sets the bits
