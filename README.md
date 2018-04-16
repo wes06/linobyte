@@ -8,6 +8,7 @@
 * [Motivation and Description](#motivation-description)
 * [How it works](#how-it-works)
 * [Relevance to Ars Electronica 2018](#relevance)
+* [Potential presentation formats](#presentation-formats)
 * [Important Dates](#dates)
 * [Preliminary Functional Block Diagram](#block-diagram)
 * [Simulations](#simulations)
@@ -35,9 +36,6 @@ So, if the user wants to write the "A" character, the steps should be the follow
 5. Check the character on a screen and correct or proceed to the next character.
 
 
-
-(So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
-
 ![A example](./Img/Renders/sketch_weaved_overlaid.png) 
 
 ASCII table:  
@@ -57,6 +55,20 @@ By translating machine possibilities into "human" affordances and human actions 
 To the extent that you have to become partly machine to interact with a machine, new interfaces which make machines closer to human (dealing with letters, words, instead of bits and bytes) allows us to keep being human while dealing with complex tasks. So, making regular users go through the effort of becoming more machine to write a simple word might bring some appreciation into the quantity and quality of the safety nets that we have in our devices today.
 
 
+## <a name="presentation-formats"></a>Potential presentation formats at Ars Electronica
+
+While one of the main goals of the object is to provide a hands on experience, this was conceived for a more controlled environment in a smaller event (Media Archeology workshop) so I'm not entirely sure if its a good idea to fully expose the object during Ars Electronica.
+
+I see two possible scenarios, one where it is interactive, other where its assembled and working but where the public wont be able to touch it.
+
+- **Interactive**  
+   1. Object is fully exposed to the public.
+   2. Object is not fully exposed to the public, but the coils are assembled in a way that you can weave through them without touching the rest of the object. (I mount the coils in an acrylic panel with extended wires for example)
+
+- **Non-interactive**   
+   1. Object is exposed working but out of reach of the public. A video is shown with the process of weaving the wire.
+
+
 ## <a name="dates"></a>Important dates:
 
 - finish the "Char" PCB design (3rd week of April)
@@ -65,8 +77,8 @@ To the extent that you have to become partly machine to interact with a machine,
 - Send the "Word" Gerber files to the manufacturer (4th week of April)
 - Finish the Bill of Materials and order the components from Mouser (End of April)
 - Assemble the char boards (1st week of May)
-- Assemble the word boards (2nd week of May)
-- Test the boards and finish the firmware. (3rd week of May)
+- Assemble the word boards (1st week of May)
+- Test the boards and finish the firmware. (2nd week of May)
 - Test the boards as HID Keyboard (3rd week of May)
 - Decide if I want to build an external custom display (e-ink, 16 segments, 5x7 array, etc)
 - Media Archeology workshop (4th week of May)
@@ -76,7 +88,11 @@ To the extent that you have to become partly machine to interact with a machine,
 
 ## <a name="block-diagram"></a>Preliminary Functional Block Diagram
 
+Coils are out of order in the following diagram:
+
 ![Preliminary Functional Block Diagram](./Img/Block%20Diagrams/preliminary-block-diagram.png)
+
+(So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
 
 #### Description of the main components:
 
@@ -85,7 +101,7 @@ To the extent that you have to become partly machine to interact with a machine,
 - Coil: a 1:10 to 1:30 transformer (the single turn will be the wire than can be weaved or not)
 - Rectifier: Full bridge of schottky rectifiers: wire can be weaved from any direction
 - Comparator: Since I don't know for sure how efficient the coil transformer will be, I want to be able to set the threshold manually.
-- Coil Driver: Sends pulses through the coils. A pulse rated capacitor (probabbly Wima MKT) will be used in series to prevent coil saturation. Square wave signal will come from main board (either a VCO, astable multivibrator or a PWM signal from the MCU).
+- Coil Driver: Sends pulses through the coils. A pulse rated capacitor (probably Wima MKT) will be used in series to prevent coil saturation. Square wave signal will come from main board (either a VCO, astable multivibrator or a PWM signal from the MCU).
 - Buffer with tri-state outputs: Outputs will be active or high-impedance depending on Enable pin. So I can read all chars using the same pins on the MCU.
 
 ##### Word
@@ -104,6 +120,8 @@ Microcontrollers and ICs in general will use 3.3V. I might want to power the coi
 
 
 ## <a name="simulations"></a>Simulations
+
+Current pulses seem enough even with limited current. I have assembled a few coils and I'm waiting to either test them in Linz where I have my oscilloscope or borrow one while I'm in Brazil.
 
 ![](./Img/Simulation/linobyte-circuitlab-schematic.png)
 ![](./Img/Simulation/linobyte-circuitlab-voltage.png)
