@@ -8,7 +8,7 @@
 * [Motivation and Description](#motivation-description)
 * [How it works](#how-it-works)
 * [Relevance to Ars Electronica 2018](#relevance)
-* [Potential presentation formats](#presentation-formats)
+x
 * [Important Dates](#dates)
 * [Functional Block Diagram](#block-diagram)
 * [Simulations](#simulations)
@@ -62,8 +62,8 @@ While one of the main goals of the object is to provide a hands on experience, t
 I see two possible scenarios, one where it is interactive, other where its assembled and working but where the public wont be able to touch it.
 
 - **Interactive**  
-   1. Object is fully exposed to the public.
-   2. Object is not fully exposed to the public, but the coils are assembled in a way that you can weave through them without touching the rest of the object. (I mount the coils in an acrylic panel with extended wires for example)
+   1. Object is fully exposed (in view and touchable) to the public.
+   2. Object is not fully exposed (in view, but not fully touchable) to the public, but the coils are assembled in a way that you can weave through them without touching the rest of the object. (I mount the coils in an acrylic panel with extended wires for example)
 
 - **Non-interactive**   
    1. Object is exposed working but out of reach of the public. A video is shown with the process of weaving the wire. 
