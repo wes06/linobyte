@@ -8,7 +8,6 @@
 * [Motivation and Description](#motivation-description)
 * [How it works](#how-it-works)
 * [Relevance to Ars Electronica 2018](#relevance)
-x
 * [Important Dates](#dates)
 * [Functional Block Diagram](#block-diagram)
 * [Simulations](#simulations)
@@ -132,14 +131,24 @@ Current pulses seem enough even with limited current. I have assembled a few coi
 
 ## <a name="pcbs"></a>PCBs
 
+
+As of 19/April.  
+
+2D view:  
+
+![](./Img/PCB/04-19-PCB-2D.png)  
+
+3D view:  
+![](./Img/PCB/04-19-PCB-3D.png)
+
 As of 10/April.  
 
 2D view:  
 
-![](./Img/PCB/PCB-2D.png)  
+![](./Img/PCB/04-10-PCB-2D.png)  
 
 3D view:  
-![](./Img/PCB/PCB-3D.png)
+![](./Img/PCB/04-10-PCB-3D.png)
 
 
 ## <a name="naming"></a>Naming
@@ -193,6 +202,9 @@ http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/
 Neil on how transformers work.
 https://electronics.stackexchange.com/a/221279/61257
 
+https://electronics.stackexchange.com/questions/116195/how-to-build-very-low-cost-current-transformer
+https://electronics.stackexchange.com/questions/335570/ac-current-sensing-switch-using-current-transformer
+https://electronics.stackexchange.com/questions/136086/how-do-i-design-a-current-transformer
 
 ### Comparators:
 
@@ -229,6 +241,8 @@ e-ink
 https://www.amazon.de/Waveshare-Resolution-Electronic-Controller-interface/dp/B071LGVVL1/ref=sr_1_1?rps=1&ie=UTF8&qid=1523130359&sr=8-1&keywords=e+paper+arduino&refinements=p_76%3A419122031
 
 
+ZXGD3005
+ZXGD3009
 
 
 ## <a name="glossary"></a>Glossary
