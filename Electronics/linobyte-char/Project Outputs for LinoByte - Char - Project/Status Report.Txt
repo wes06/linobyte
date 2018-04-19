@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [LinoByte - Char.PcbDoc]
+   Generated File[LinoByte - Char.GTO]
+   Generated File[LinoByte - Char.GTP]
+   Generated File[LinoByte - Char.GTS]
+   Generated File[LinoByte - Char.GTL]
+   Generated File[LinoByte - Char.G1]
+   Generated File[LinoByte - Char.G2]
+   Generated File[LinoByte - Char.GBL]
+   Generated File[LinoByte - Char.GBS]
+   Generated File[LinoByte - Char.GBO]
+   Generated File[LinoByte - Char.GM1]
+   Generated File[LinoByte - Char.GM5]
+   Generated File[LinoByte - Char.GM13]
+   Generated File[LinoByte - Char.GM15]
+   Generated File[LinoByte - Char.GKO]
+   Generated File[LinoByte - Char.GPT]
+   Generated File[LinoByte - Char.GPB]
+   Generated File[LinoByte - Char.RUL]
+   Generated File[LinoByte - Char.EXTREP]
+   Generated File[LinoByte - Char.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 12:27:50 AM On 4/19/2018

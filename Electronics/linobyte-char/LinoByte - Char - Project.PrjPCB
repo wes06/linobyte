@@ -122,6 +122,111 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IOYXGBQP
 
+[Document6]
+DocumentPath=Fabrication.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G1
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G2
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.REP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.TXT
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

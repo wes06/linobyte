@@ -1,0 +1,373 @@
+*************************************************************
+FileName = LinoByte - Char.GBR
+AutoAperture = True
+*************************************************************
+Generating : Top Solder
+      File : LinoByte - Char.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : LinoByte - Char.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : LinoByte - Char.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : LinoByte - Char.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D42
+    D44
+    D45
+    D46
+    D47
+    D48
+    D57
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : LinoByte - Char.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D12
+    D13
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : LinoByte - Char.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D11
+    D14
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : LinoByte - Char.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D10
+    D14
+    D62
+    D63
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 5
+      File : LinoByte - Char.GM5
+
+    Adding Layer      : Mechanical 5
+
+
+Used DCodes :
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : LinoByte - Char.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : LinoByte - Char.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D40
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : LinoByte - Char.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : LinoByte - Char.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D42
+    D44
+    D45
+    D46
+    D47
+    D48
+    D57
+    D60
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : LinoByte - Char.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D12
+    D41
+    D42
+    D44
+    D45
+    D46
+    D47
+    D48
+    D55
+    D57
+*************************************************************
+
+*************************************************************
+Generating : Mid2
+      File : LinoByte - Char.G2
+
+    Adding Layer      : Mid2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D46
+    D47
+    D48
+    D55
+    D56
+    D57
+    D58
+    D59
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : LinoByte - Char.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Mid1
+      File : LinoByte - Char.G1
+
+    Adding Layer      : Mid1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D46
+    D47
+    D48
+    D55
+    D56
+    D57
+    D58
+    D59
+*************************************************************
+
