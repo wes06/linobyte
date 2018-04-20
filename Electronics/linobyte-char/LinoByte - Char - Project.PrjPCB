@@ -38,7 +38,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Coil.SchDoc
+DocumentPath=LB-char-coilRectifier.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,7 +55,7 @@ GenerateClassCluster=0
 DocumentUniqueId=LPMVBQPG
 
 [Document2]
-DocumentPath=Buffer.SchDoc
+DocumentPath=LB-char-topLevel.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -89,7 +89,7 @@ GenerateClassCluster=0
 DocumentUniqueId=UPFDBYQR
 
 [Document4]
-DocumentPath=CoilHolder.SchDoc
+DocumentPath=LB-char-coilHolder.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -106,7 +106,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KTSNPPOG
 
 [Document5]
-DocumentPath=CoilDriver.SchDoc
+DocumentPath=LB-char-coilDriver.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
