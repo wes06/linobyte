@@ -186,7 +186,8 @@ Instead of pressing a button to make a letter or touching a screen, you weave a 
 
 aulis.com/pascal.htm
 
-
+14 Segment ASCII library  
+https://github.com/dmadison/LED-Segment-ASCII
 
 http://drhart.ucoz.com/index/core_memory/0-123
 
@@ -194,6 +195,8 @@ http://www.ciphersbyritter.com/MARK8/MAGCORE/MAGCORE.HTM
 
 
 http://qrp.gr/coreROM/
+
+https://monster6502.com/
 
 ROD ROM
 http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/
@@ -205,6 +208,14 @@ https://electronics.stackexchange.com/a/221279/61257
 https://electronics.stackexchange.com/questions/116195/how-to-build-very-low-cost-current-transformer
 https://electronics.stackexchange.com/questions/335570/ac-current-sensing-switch-using-current-transformer
 https://electronics.stackexchange.com/questions/136086/how-do-i-design-a-current-transformer
+
+
+Edge Coupled Microstrip Calculation:  
+
+https://www.eeweb.com/tools/edge-coupled-microstrip-impedance
+
+PCBWAY Stackup
+https://www.pcbway.com/multi-layer-laminated-structure.html
 
 ### Comparators:
 
@@ -220,10 +231,6 @@ http://www.ti.com/lit/ug/tidu020a/tidu020a.pdf
 Potential coils: 9mm x 16mm x 5mm (inner, outer, thickness)  
 https://www2.mouser.com/Passive-Components/Ferrites/Ferrite-Toroids-Ferrite-Rings/_/N-fb8t7Z1yzvvqx?P=1ya7hnoZ1z0vsmwZ1z0vsssZ1z0vsa5Z1z0vsltZ1z0vrn7&Rl=fb8t7ZerbuZ1yxgwg4Z1yzmqroSGT&Ns=Inside%20Diameter|1
 
-AP331  
-Single Differential Comparator  
-https://www2.mouser.com/ProductDetail/Diodes-Incorporated/AP331AWG-7?qs=sGAEpiMZZMuayl%2fEk2kXcbfp56RBiQa%252bBYTJGtoHiWw%3d
-
 Kemet ESD - R Series
 
 Schmitt Trigger Octal Non Inverting  
@@ -233,6 +240,8 @@ https://www.mouser.at/ProductDetail/Nexperia/74HC7541PW118?qs=sGAEpiMZZMtOwpHsRT
 74HC138  
 https://www.mouser.at/datasheet/2/302/74HC_HCT138-1148685.pdf
 
+8 to 3 encoder (Auto adressing on 16 Segment Displays (shift decoded 1:8 by 1, adds 1 to 3 bit value))
+
 Card edge 20 Pos connector  
 https://www.digikey.com/product-detail/en/te-connectivity-amp-connectors/5-5530843-0/A31722-ND/770548
 
@@ -240,6 +249,8 @@ e-ink
 296x128 2.9in  
 https://www.amazon.de/Waveshare-Resolution-Electronic-Controller-interface/dp/B071LGVVL1/ref=sr_1_1?rps=1&ie=UTF8&qid=1523130359&sr=8-1&keywords=e+paper+arduino&refinements=p_76%3A419122031
 
+PSA23-11SRWA  (~ 300mA per char)
+https://www.mouser.at/ProductDetail/Kingbright/PSA23-11SRWA?qs=VdjlWU%2fzoOGQsM3wN0NEHg==
 
 ZXGD3005
 ZXGD3009
