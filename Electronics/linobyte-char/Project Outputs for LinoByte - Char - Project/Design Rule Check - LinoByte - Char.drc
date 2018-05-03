@@ -1,0 +1,86 @@
+Protel Design System Design Rule Check
+PCB File : \\Mac\Google Drive\academic\UfG\LINOBYTE\repo\Electronics\linobyte-char\LinoByte - Char.PcbDoc
+Date     : 5/3/2018
+Time     : 10:56:54 PM
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net +12V Between Pad R10-2(2.75mm,17.2mm) on Top Layer And Via (3.5mm,17.5mm) from Top Layer to Bottom Layer 
+Rule Violations :1
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=1.5mm) (Preferred=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.175mm) (Conductor Width=0.2mm) (Air Gap=0.2mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.15mm) (((ObjectKind = 'Pad') OR (ObjectKind = 'Via')) And (Layer = 'MultiLayer') And (HoleDiameter <= AsMM(0.45)))
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.175mm) (((ObjectKind = 'Pad') OR (ObjectKind = 'Via')) And (Layer = 'MultiLayer') And (HoleDiameter > AsMM(0.45)))
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.25mm) (Max=6mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.35mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.08mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.1mm) Between Pad R9-5(7.95mm,18.85mm) on Top Layer And Track (7.75mm,19.25mm)(7.75mm,19.75mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+Rule Violations :1
+
+Processing Rule : Silk to Silk (Clearance=0.2mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (OnLayer('Mid1') or OnLayer('Mid2'))
+Rule Violations :0
+
+Processing Rule : Room Coil5 (Bounding Region = (138.871mm, 186.494mm, 152.106mm, 206.106mm) (InComponentClass('Coil5'))
+Rule Violations :0
+
+Processing Rule : Room Coil4 (Bounding Region = (138.871mm, 206.494mm, 152.106mm, 226.106mm) (InComponentClass('Coil4'))
+Rule Violations :0
+
+Processing Rule : Room Coil7 (Bounding Region = (138.871mm, 146.494mm, 152.106mm, 166.106mm) (InComponentClass('Coil7'))
+Rule Violations :0
+
+Processing Rule : Room Coil8 (Bounding Region = (138.871mm, 126.494mm, 152.106mm, 146.106mm) (InComponentClass('Coil8'))
+Rule Violations :0
+
+Processing Rule : Room Coil6 (Bounding Region = (138.871mm, 166.494mm, 152.106mm, 186.106mm) (InComponentClass('Coil6'))
+Rule Violations :0
+
+Processing Rule : Room Coil1 (Bounding Region = (138.871mm, 266.494mm, 152.106mm, 286.106mm) (InComponentClass('Coil1'))
+Rule Violations :0
+
+Processing Rule : Room Coil2 (Bounding Region = (138.871mm, 246.494mm, 152.106mm, 266.106mm) (InComponentClass('Coil2'))
+Rule Violations :0
+
+Processing Rule : Room Coil3 (Bounding Region = (138.871mm, 226.494mm, 152.106mm, 246.106mm) (InComponentClass('Coil3'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25mm) (Prefered=12.5mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 2
+Waived Violations : 0
+Time Elapsed        : 00:00:14

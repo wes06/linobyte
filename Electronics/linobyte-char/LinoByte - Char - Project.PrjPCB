@@ -140,91 +140,191 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.DRR
+DocumentPath=Project Outputs for LinoByte - Char - Project\Design Rule Check - LinoByte - Char.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.EXTREP
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G1
+DocumentPath=Project Outputs for LinoByte - Char - Project\NC Drill\LinoByte - Char.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G2
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBL
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBO
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G1
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBS
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.G1
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GKO
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.G2
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM1
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.G2
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM5
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM13
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM15
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPB
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPT
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTL
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTO
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTP
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTS
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.LDP
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.REP
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.RUL
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument22]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GM31
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GM31
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for LinoByte - Char - Project\NC Drill\LinoByte - Char.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument42]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.REP
+DItemRevisionGUID=
+
+[GeneratedDocument43]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.REP
+DItemRevisionGUID=
+
+[GeneratedDocument44]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument45]
+DocumentPath=Project Outputs for LinoByte - Char - Project\Gerber\LinoByte - Char.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument46]
 DocumentPath=Project Outputs for LinoByte - Char - Project\Fabrication\LinoByte - Char.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument47]
+DocumentPath=Project Outputs for LinoByte - Char - Project\NC Drill\LinoByte - Char.TXT
 DItemRevisionGUID=
 
 [Configuration1]
@@ -1178,47 +1278,125 @@ ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
 ComponentLibraryIdentifier1=wes.SchLib
-ComponentDesignItemID1=Capacitor
-ComponentSymbolReference1=Capacitor
+ComponentDesignItemID1=Capacitor - Film
+ComponentSymbolReference1=Capacitor - Film
 ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
 ComponentLibraryIdentifier2=wes.SchLib
-ComponentDesignItemID2=Diode
-ComponentSymbolReference2=Diode
+ComponentDesignItemID2=Capacitor
+ComponentSymbolReference2=Capacitor
 ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
 ComponentLibraryIdentifier3=wes.SchLib
-ComponentDesignItemID3=LED
-ComponentSymbolReference3=LED
+ComponentDesignItemID3=Diode Schottky
+ComponentSymbolReference3=Diode Schottky
 ComponentUpdate3=1
 ComponentIsDeviceSheet3=0
 ComponentLibIdentifierKind4=Library Name And Type
 ComponentLibraryIdentifier4=wes.SchLib
-ComponentDesignItemID4=MOSFET N CH
-ComponentSymbolReference4=MOSFET N CH
+ComponentDesignItemID4=Diode
+ComponentSymbolReference4=Diode
 ComponentUpdate4=1
 ComponentIsDeviceSheet4=0
 ComponentLibIdentifierKind5=Library Name And Type
 ComponentLibraryIdentifier5=wes.SchLib
-ComponentDesignItemID5=Resistor Array - 4P
-ComponentSymbolReference5=Resistor Array - 4P
+ComponentDesignItemID5=Ferrite Bead
+ComponentSymbolReference5=Ferrite Bead
 ComponentUpdate5=1
 ComponentIsDeviceSheet5=0
 ComponentLibIdentifierKind6=Library Name And Type
 ComponentLibraryIdentifier6=wes.SchLib
-ComponentDesignItemID6=Resistor
-ComponentSymbolReference6=Resistor
+ComponentDesignItemID6=FX23-40S-0.5SH
+ComponentSymbolReference6=FX23-40S-0.5SH
 ComponentUpdate6=1
 ComponentIsDeviceSheet6=0
-FullReplace=1
-UpdateDesignatorLock=1
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=wes.SchLib
+ComponentDesignItemID7=Hole
+ComponentSymbolReference7=Hole
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=wes.SchLib
+ComponentDesignItemID8=LED
+ComponentSymbolReference8=LED
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=wes.SchLib
+ComponentDesignItemID9=Linobyte - MagnetSwitch
+ComponentSymbolReference9=Linobyte - MagnetSwitch
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=wes.SchLib
+ComponentDesignItemID10=linobyte-coil
+ComponentSymbolReference10=linobyte-coil
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=wes.SchLib
+ComponentDesignItemID11=MCP6541U
+ComponentSymbolReference11=MCP6541U
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=wes.SchLib
+ComponentDesignItemID12=MOSFET N CH
+ComponentSymbolReference12=MOSFET N CH
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=wes.SchLib
+ComponentDesignItemID13=PCB-7Seg
+ComponentSymbolReference13=PCB-7Seg
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=wes.SchLib
+ComponentDesignItemID14=Resistor Array - 4P
+ComponentSymbolReference14=Resistor Array - 4P
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=wes.SchLib
+ComponentDesignItemID15=Resistor
+ComponentSymbolReference15=Resistor
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Library Name And Type
+ComponentLibraryIdentifier16=wes.SchLib
+ComponentDesignItemID16=Test Point
+ComponentSymbolReference16=Test Point
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Library Name And Type
+ComponentLibraryIdentifier17=wes.SchLib
+ComponentDesignItemID17=TVS Bidirectional
+ComponentSymbolReference17=TVS Bidirectional
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Library Name And Type
+ComponentLibraryIdentifier18=wes.SchLib
+ComponentDesignItemID18=TVS
+ComponentSymbolReference18=TVS
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
+ComponentLibIdentifierKind19=Library Name And Type
+ComponentLibraryIdentifier19=wes.SchLib
+ComponentDesignItemID19=ZXGD3005
+ComponentSymbolReference19=ZXGD3005
+ComponentUpdate19=1
+ComponentIsDeviceSheet19=0
+FullReplace=0
+UpdateDesignatorLock=0
 UpdatePartIDLock=1
 PreserveParameterLocations=1
 PreserveParameterVisibility=1
 DoGraphics=1
-DoParameters=1
+DoParameters=0
 DoModels=1
 AddParameters=0
 RemoveParameters=0
@@ -1292,60 +1470,117 @@ ModelType3=PCBLIB
 ModelName3=C1210_N
 ModelUpdate3=1
 ModelType4=PCBLIB
-ModelName4=E2835
+ModelName4=Cap Film 5mm pitch, 7.2x7.2mm
 ModelUpdate4=1
 ModelType5=PCBLIB
-ModelName5=LED 0603 Reverse
+ModelName5=DO214AB SMC
 ModelUpdate5=1
 ModelType6=PCBLIB
-ModelName6=LED 0603/1608
+ModelName6=DO214AC SMA
 ModelUpdate6=1
 ModelType7=PCBLIB
-ModelName7=LED 0805/2012
+ModelName7=E2835
 ModelUpdate7=1
 ModelType8=PCBLIB
-ModelName8=LED 1206/3216
+ModelName8=F0603_N
 ModelUpdate8=1
 ModelType9=PCBLIB
-ModelName9=LED-ReverseMount-1206-2,3mm Hole
+ModelName9=FX23-40S-0.5SH
 ModelUpdate9=1
 ModelType10=PCBLIB
-ModelName10=OSLON
+ModelName10=Harwin S2751-46R
 ModelUpdate10=1
 ModelType11=PCBLIB
-ModelName11=PowerDI5
+ModelName11=Insert-Thread-SMD-M2
 ModelUpdate11=1
 ModelType12=PCBLIB
-ModelName12=R0402
+ModelName12=LED 0603 Reverse
 ModelUpdate12=1
 ModelType13=PCBLIB
-ModelName13=R0603
+ModelName13=LED 0603/1608
 ModelUpdate13=1
 ModelType14=PCBLIB
-ModelName14=R0805
+ModelName14=LED 0805/2012
 ModelUpdate14=1
 ModelType15=PCBLIB
-ModelName15=R1206
+ModelName15=LED 1206/3216
 ModelUpdate15=1
 ModelType16=PCBLIB
-ModelName16=SOD323F
+ModelName16=LED-ReverseMount-1206-2,3mm Hole
 ModelUpdate16=1
 ModelType17=PCBLIB
-ModelName17=SOT23_N
+ModelName17=Linobyte - MagnetSwitch
 ModelUpdate17=1
 ModelType18=PCBLIB
-ModelName18=YC164
+ModelName18=linobyte-coil
 ModelUpdate18=1
+ModelType19=PCBLIB
+ModelName19=M1.6 Mounting Hole
+ModelUpdate19=1
+ModelType20=PCBLIB
+ModelName20=M2 Hole
+ModelUpdate20=1
+ModelType21=PCBLIB
+ModelName21=M2.5 HOLE
+ModelUpdate21=1
+ModelType22=PCBLIB
+ModelName22=M3 Hole
+ModelUpdate22=1
+ModelType23=PCBLIB
+ModelName23=OSLON
+ModelUpdate23=1
+ModelType24=PCBLIB
+ModelName24=PCB-7Seg-10mm
+ModelUpdate24=1
+ModelType25=PCBLIB
+ModelName25=PowerDI5
+ModelUpdate25=1
+ModelType26=PCBLIB
+ModelName26=R0402
+ModelUpdate26=1
+ModelType27=PCBLIB
+ModelName27=R0603
+ModelUpdate27=1
+ModelType28=PCBLIB
+ModelName28=R0805
+ModelUpdate28=1
+ModelType29=PCBLIB
+ModelName29=R1206
+ModelUpdate29=1
+ModelType30=PCBLIB
+ModelName30=SOD323F
+ModelUpdate30=1
+ModelType31=PCBLIB
+ModelName31=SOD323F-Comchip Variant
+ModelUpdate31=1
+ModelType32=PCBLIB
+ModelName32=SOT23_N
+ModelUpdate32=1
+ModelType33=PCBLIB
+ModelName33=SOT23-5_N
+ModelUpdate33=1
+ModelType34=PCBLIB
+ModelName34=SOT23-6_N
+ModelUpdate34=1
+ModelType35=PCBLIB
+ModelName35=TSSOP20_L
+ModelUpdate35=1
+ModelType36=PCBLIB
+ModelName36=TSSOP20_N
+ModelUpdate36=1
+ModelType37=PCBLIB
+ModelName37=YC164
+ModelUpdate37=1
 ModelTypeGroup1=SI
 ModelTypeUpdate1=1
-ModelType19=SI
-ModelName19=Res
-ModelUpdate19=1
+ModelType38=SI
+ModelName38=Res
+ModelUpdate38=1
 ModelTypeGroup2=SIM
 ModelTypeUpdate2=1
-ModelType20=SIM
-ModelName20=RESISTOR
-ModelUpdate20=1
+ModelType39=SIM
+ModelName39=RESISTOR
+ModelUpdate39=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0

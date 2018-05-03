@@ -2,6 +2,49 @@
 FileName = LinoByte - Char.GBR
 AutoAperture = True
 *************************************************************
+Generating : Bottom Pad Master
+      File : LinoByte - Char.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : LinoByte - Char.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D17
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D50
+    D51
+    D55
+    D56
+*************************************************************
+
+*************************************************************
 Generating : Top Solder
       File : LinoByte - Char.GTS
 
@@ -13,6 +56,7 @@ Generating : Top Solder
 
 
 Used DCodes :
+    D18
     D19
     D20
     D21
@@ -41,15 +85,53 @@ Used DCodes :
     D44
     D45
     D46
-    D47
-    D48
 *************************************************************
 
 *************************************************************
-Generating : Top Paste
-      File : LinoByte - Char.GTP
+Generating : Mid2
+      File : LinoByte - Char.G2
 
-    Adding Layer      : Top Paste
+    Adding Layer      : Mid2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D43
+    D44
+    D45
+    D55
+    D56
+    D57
+    D58
+    D59
+*************************************************************
+
+*************************************************************
+Generating : Mid1
+      File : LinoByte - Char.G1
+
+    Adding Layer      : Mid1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D41
+    D43
+    D44
+    D45
+    D55
+    D56
+    D57
+    D58
+    D59
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : LinoByte - Char.GPT
 
     Adding Layer      : Top Layer
 
@@ -78,7 +160,15 @@ Used DCodes :
     D36
     D37
     D38
-    D39
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D54
 *************************************************************
 
 *************************************************************
@@ -96,27 +186,6 @@ Used DCodes :
     D14
     D15
     D16
-    D17
-*************************************************************
-
-*************************************************************
-Generating : Bottom Pad Master
-      File : LinoByte - Char.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D41
-    D42
-    D44
-    D45
-    D46
-    D47
-    D48
-    D57
 *************************************************************
 
 *************************************************************
@@ -132,6 +201,7 @@ Used DCodes :
     D10
     D12
     D13
+    D17
     D18
     D19
     D20
@@ -153,7 +223,6 @@ Used DCodes :
     D36
     D37
     D38
-    D39
     D41
     D42
     D43
@@ -172,72 +241,25 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 15
-      File : LinoByte - Char.GM15
-
-    Adding Layer      : Mechanical 15
-
-
-Used DCodes :
-    D11
-    D14
-    D61
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : LinoByte - Char.GM13
-
-    Adding Layer      : Mechanical 13
-
-
-Used DCodes :
-    D10
-    D14
-    D62
-    D63
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 5
+Generating : Board Outline
       File : LinoByte - Char.GM5
 
-    Adding Layer      : Mechanical 5
+    Adding Layer      : Board Outline
 
 
 Used DCodes :
-    D61
+    D60
 *************************************************************
 
 *************************************************************
-Generating : Mechanical 1
-      File : LinoByte - Char.GM1
+Generating : PCBWAY Serial#
+      File : LinoByte - Char.GM31
 
-    Adding Layer      : Mechanical 1
+    Adding Layer      : PCBWAY Serial#
 
 
 Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Keep-Out Layer
-      File : LinoByte - Char.GKO
-
-    Adding Layer      : Keep-Out Layer
-
-
-Used DCodes :
-    D40
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : LinoByte - Char.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
+    D60
 *************************************************************
 
 *************************************************************
@@ -254,62 +276,28 @@ Generating : Bottom Solder
 Used DCodes :
     D41
     D42
+    D43
     D44
     D45
     D46
-    D47
-    D48
-    D57
-    D60
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : LinoByte - Char.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D12
-    D41
-    D42
-    D44
-    D45
-    D46
-    D47
-    D48
-    D55
-    D57
-*************************************************************
-
-*************************************************************
-Generating : Mid2
-      File : LinoByte - Char.G2
-
-    Adding Layer      : Mid2
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D41
-    D46
-    D47
-    D48
-    D55
     D56
-    D57
-    D58
-    D59
 *************************************************************
 
 *************************************************************
-Generating : Top Pad Master
-      File : LinoByte - Char.GPT
+Generating : Bottom Overlay
+      File : LinoByte - Char.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : LinoByte - Char.GTP
+
+    Adding Layer      : Top Paste
 
     Adding Layer      : Top Layer
 
@@ -317,6 +305,8 @@ Generating : Top Pad Master
 
 
 Used DCodes :
+    D17
+    D18
     D19
     D20
     D21
@@ -337,37 +327,5 @@ Used DCodes :
     D36
     D37
     D38
-    D39
-    D41
-    D42
-    D43
-    D44
-    D45
-    D46
-    D47
-    D48
-    D49
-    D50
-*************************************************************
-
-*************************************************************
-Generating : Mid1
-      File : LinoByte - Char.G1
-
-    Adding Layer      : Mid1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D41
-    D46
-    D47
-    D48
-    D55
-    D56
-    D57
-    D58
-    D59
 *************************************************************
 

@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: LinoByte - Char.GBR   4/19/2018  12:27:48 AM
+Gerber File Extension Report For: LinoByte - Char.GBR   5/4/2018  12:44:09 AM
 ------------------------------------------------------------------------------------------
 
 
@@ -17,9 +17,6 @@ Layer Extension     Layer Description
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
 .GBO                Bottom Overlay                          
-.GKO                Keep-Out Layer                          
-.GM1                Mechanical 1                            
-.GM5                Mechanical 5                            
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
+.GM5                Board Outline                           
+.GM31               PCBWAY Serial#                          
 ------------------------------------------------------------------------------------------

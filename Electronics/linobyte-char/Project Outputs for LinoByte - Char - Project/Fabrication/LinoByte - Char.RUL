@@ -1,8 +1,0 @@
-DRC Rules Export File for PCB: \\Mac\Google Drive\academic\UfG\LINOBYTE\repo\Electronics\linobyte-char\LinoByte - Char.PcbDoc
-RuleKind=SolderMaskExpansion|RuleName=0.3mm Via|Scope=Board|Minimum=-5.91
-RuleKind=MinimumAnnularRing|RuleName=Minimum IAR <=0.45mm|Scope=Board|Minimum=5.91
-RuleKind=MinimumAnnularRing|RuleName=Minimum IAR  >0.45mm|Scope=Board|Minimum=6.89
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=0.00
-RuleKind=Width|RuleName=Width-xTW|Scope=Board|Minimum=5.91
-RuleKind=Clearance|RuleName=Clearance-xPP-xTP-xTT|Scope=Board|Minimum=5.91
