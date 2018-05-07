@@ -1,0 +1,23 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [lb-charDisplay-PCB1.PcbDoc]
+   Generated File[lb-charDisplay-PCB1.GTO]
+   Generated File[lb-charDisplay-PCB1.GTP]
+   Generated File[lb-charDisplay-PCB1.GTS]
+   Generated File[lb-charDisplay-PCB1.GTL]
+   Generated File[lb-charDisplay-PCB1.GBL]
+   Generated File[lb-charDisplay-PCB1.GBS]
+   Generated File[lb-charDisplay-PCB1.GBP]
+   Generated File[lb-charDisplay-PCB1.GBO]
+   Generated File[lb-charDisplay-PCB1.GM1]
+   Generated File[lb-charDisplay-PCB1.GPT]
+   Generated File[lb-charDisplay-PCB1.GPB]
+   Generated File[lb-charDisplay-PCB1.RUL]
+   Generated File[lb-charDisplay-PCB1.EXTREP]
+   Generated File[lb-charDisplay-PCB1.REP]
+
+
+Files Generated   : 14
+Documents Printed : 0
+
+Finished Output Generation At 10:21:28 PM On 5/7/2018
