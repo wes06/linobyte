@@ -13,9 +13,9 @@ D21   RECTANGULAR       118.110      76.772       0.000 FLASH       0.000
 D22   RECTANGULAR        15.748      15.748       0.000 FLASH       0.000
 D23   RECTANGULAR        88.583      88.583       0.000 FLASH       0.000
 D24   RECTANGULAR        31.496      31.496       0.000 FLASH       0.000
-D27   ROUNDED            39.370      19.685       0.000 FLASH       0.000
-D41   RECTANGULAR        11.811      13.780       0.000 FLASH     270.000
-D43   RECTANGULAR        21.654      43.307       0.000 FLASH     270.000
+D28   ROUNDED            39.370      19.685       0.000 FLASH       0.000
+D42   RECTANGULAR        11.811      13.780       0.000 FLASH     270.000
+D44   RECTANGULAR        21.654      43.307       0.000 FLASH     270.000
 D51   RECTANGULAR        29.921      94.488       0.000 FLASH     180.000
 D52   ROUNDED             9.055      31.496       0.000 FLASH       0.000
 D53   ROUNDED             9.055      31.496       0.000 FLASH      90.000
