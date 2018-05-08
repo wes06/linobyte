@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: lb-charDisplay-PCB1.GBR   5/7/2018  10:21:28 PM
+Gerber File Extension Report For: lb-charDisplay-PCB1.GBR   5/8/2018  10:58:10 AM
 ------------------------------------------------------------------------------------------
 
 
@@ -14,7 +14,5 @@ Layer Extension     Layer Description
 .GTP                Top Paste                               
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
-.GBP                Bottom Paste                            
-.GBO                Bottom Overlay                          
 .GM1                Mechanical 1                            
 ------------------------------------------------------------------------------------------
