@@ -1,21 +1,9 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of PCB Document [lb-charDisplay-PCB1.PcbDoc]
-   Generated File[lb-charDisplay-PCB1.GTO]
-   Generated File[lb-charDisplay-PCB1.GTP]
-   Generated File[lb-charDisplay-PCB1.GTS]
-   Generated File[lb-charDisplay-PCB1.GTL]
-   Generated File[lb-charDisplay-PCB1.GBL]
-   Generated File[lb-charDisplay-PCB1.GBS]
-   Generated File[lb-charDisplay-PCB1.GM1]
-   Generated File[lb-charDisplay-PCB1.GPT]
-   Generated File[lb-charDisplay-PCB1.GPB]
-   Generated File[lb-charDisplay-PCB1.RUL]
-   Generated File[lb-charDisplay-PCB1.EXTREP]
-   Generated File[lb-charDisplay-PCB1.REP]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [linobyte-charDisplay.PrjPCB]
 
 
-Files Generated   : 12
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 10:58:11 AM On 5/8/2018
+Finished Output Generation At 9:17:08 PM On 5/13/2018
