@@ -1,24 +1,9 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of PCB Document [LinoByte - Char.PcbDoc]
-   Generated File[LinoByte - Char.GTO]
-   Generated File[LinoByte - Char.GTP]
-   Generated File[LinoByte - Char.GTS]
-   Generated File[LinoByte - Char.GTL]
-   Generated File[LinoByte - Char.G1]
-   Generated File[LinoByte - Char.G2]
-   Generated File[LinoByte - Char.GBL]
-   Generated File[LinoByte - Char.GBS]
-   Generated File[LinoByte - Char.GBO]
-   Generated File[LinoByte - Char.GM5]
-   Generated File[LinoByte - Char.GM31]
-   Generated File[LinoByte - Char.GPT]
-   Generated File[LinoByte - Char.GPB]
-   Generated File[LinoByte - Char.EXTREP]
-   Generated File[LinoByte - Char.REP]
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [LinoByte - Char - Project.PrjPCB]
 
 
-Files Generated   : 15
+Files Generated   : 0
 Documents Printed : 0
 
-Finished Output Generation At 8:59:23 AM On 5/4/2018
+Finished Output Generation At 8:39:33 PM On 5/13/2018
