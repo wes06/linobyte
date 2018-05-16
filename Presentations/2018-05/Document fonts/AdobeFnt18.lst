@@ -1,0 +1,70 @@
+%!Adobe-FontList 1.18
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Bold
+FamilyName:Roboto Condensed
+StyleName:Bold
+MenuName:Roboto Condensed
+StyleBits:2
+WeightClass:700
+WidthClass:5
+AngleClass:0
+FullName:Roboto Condensed Bold
+WritingScript:Roman
+OutlineFileName:\RobotoCondensed-Bold.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:169800
+FileModTime:1506824450
+NameArray:0,Mac,4,Roboto Condensed Bold
+NameArray:0,Win,1,Roboto Condensed
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Light
+FamilyName:Roboto Condensed
+StyleName:Light
+MenuName:Roboto Condensed Light
+StyleBits:0
+WeightClass:300
+WidthClass:5
+AngleClass:0
+FullName:Roboto Condensed Light
+WritingScript:Roman
+OutlineFileName:\RobotoCondensed-Light.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:168004
+FileModTime:1506824450
+NameArray:0,Mac,4,Roboto Condensed Light
+NameArray:0,Win,1,Roboto Condensed Light
+NameArray:0,Win,16,Roboto Condensed
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RobotoCondensed-Italic
+FamilyName:Roboto Condensed
+StyleName:Italic
+MenuName:Roboto Condensed
+StyleBits:1
+WeightClass:400
+WidthClass:5
+AngleClass:1
+FullName:Roboto Condensed Italic
+WritingScript:Roman
+OutlineFileName:\RobotoCondensed-Italic.ttf
+DataFormat:sfntData
+hasSVG:no
+FileLength:175188
+FileModTime:1506824450
+NameArray:0,Mac,4,Roboto Condensed Italic
+NameArray:0,Win,1,Roboto Condensed
+%EndFont
+
