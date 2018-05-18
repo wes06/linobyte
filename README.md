@@ -211,7 +211,7 @@ https://electronics.stackexchange.com/questions/136086/how-do-i-design-a-current
 
 
 Edge Coupled Microstrip Calculation:  
-
+Tw=0.25mm Ts=0.25mm 
 https://www.eeweb.com/tools/edge-coupled-microstrip-impedance
 
 PCBWAY Stackup
