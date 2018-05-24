@@ -1,29 +1,58 @@
 ﻿#include <Arduino.h>
 
 #include <Wire.h>
+#include "wiring_private.h"
 #include <Adafruit_MCP23008.h>
 //Beginning of Auto generated function prototypes by Atmel Studio
 void enableChar(int _charToEnable);
 //End of Auto generated function prototypes by Atmel Studio
 
-Adafruit_MCP23008 mcp;
+Adafruit_MCP23008 mcp_bits;
+Adafruit_MCP23008 mcp_status;
 
+TwoWire displayI2C(&sercom1, 11, 13);
+
+//https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
+#include "PCA9685.h"
+
+// called this way, it uses the default address 0x40
+//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+// you can also call it with a different address you want
+//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x41);
+// you can also call it with a different address and I2C interface
+//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(&Wire, 0x40);
+Adafruit_PWMServoDriver charDisp0 = Adafruit_PWMServoDriver(&displayI2C, 0x40);
+
+#include "ASCII-16Seg.h"
 
 void setup() {
 
 	SerialUSB.begin(500000);
 	
 	
-	mcp.begin(0);
-
-	mcp.pinMode(0, INPUT);
-	mcp.pinMode(1, INPUT);
-	mcp.pinMode(2, INPUT);
-	mcp.pinMode(3, INPUT);
-	mcp.pinMode(4, INPUT);
-	mcp.pinMode(5, INPUT);
-	mcp.pinMode(6, INPUT);
-	mcp.pinMode(7, INPUT);
+	mcp_bits.begin(0);
+	mcp_status.begin(1);
+	
+	Wire.setClock(400000);
+	
+	
+	mcp_bits.pinMode(0, INPUT);
+	mcp_bits.pinMode(1, INPUT);
+	mcp_bits.pinMode(2, INPUT);
+	mcp_bits.pinMode(3, INPUT);
+	mcp_bits.pinMode(4, INPUT);
+	mcp_bits.pinMode(5, INPUT);
+	mcp_bits.pinMode(6, INPUT);
+	mcp_bits.pinMode(7, INPUT);
+	
+	mcp_status.pinMode(0, INPUT);
+	mcp_status.pinMode(1, INPUT);
+	mcp_status.pinMode(2, INPUT);
+	mcp_status.pinMode(3, INPUT);
+	mcp_status.pinMode(4, INPUT);
+	mcp_status.pinMode(5, INPUT);
+	mcp_status.pinMode(6, INPUT);
+	mcp_status.pinMode(7, INPUT);
 
 	//decoder
 	pinMode(0, OUTPUT);
@@ -32,6 +61,21 @@ void setup() {
 	pinMode(4, OUTPUT);
 	//enable decoder
 	digitalWrite(0,HIGH);
+	
+	
+	displayI2C.begin();
+	displayI2C.setClock(100000);
+	
+	// Assign pins 13 & 11 to SERCOM functionality
+	pinPeripheral(11, PIO_SERCOM);
+	pinPeripheral(13, PIO_SERCOM);
+
+
+
+	//charDisp0.begin();
+	charDisp0.setPWMFreq(1000);  // This is the maximum PWM frequen
+	
+	
 }
 
 
@@ -40,24 +84,40 @@ int decoderDelay = 100;
 
 void loop() {
 	for (int i = 0; i<8;i++){
+		SerialUSB.print(i);
+		SerialUSB.print(" being checked...");
+		SerialUSB.print("");
+		
 		enableChar(i);
-		delay(200);
-		SerialUSB.print(mcp.digitalRead(0));
-		SerialUSB.print(mcp.digitalRead(1));
-		SerialUSB.print(mcp.digitalRead(2));
-		SerialUSB.print(mcp.digitalRead(3));
-		SerialUSB.print(mcp.digitalRead(4));
-		SerialUSB.print(mcp.digitalRead(5));
-		SerialUSB.print(mcp.digitalRead(6));
-		SerialUSB.print(mcp.digitalRead(7));
-		SerialUSB.println();
-		delay(100);
+		delayMicroseconds(15000);
+		
+		SerialUSB.print(mcp_status.digitalRead(7-i));
+		if(mcp_status.digitalRead(7-i)){
+
+			SerialUSB.print("\tAttached: ");
+			SerialUSB.write(mcp_bits.readGPIO());
+			SerialUSB.print(SixteenSegmentASCII[mcp_bits.readGPIO()-32],BIN);
+			/*
+			// Array starts with "space", ASCII no 32, hence "-32"
+			SixteenSegmentASCII[mcp_bits.readGPIO()-32]
+			*/
+
+			SerialUSB.println();
+		}
+		else{
+			SerialUSB.print("\tNot Attached...\r\n");
+		}
+		delayMicroseconds(15000);
 	}
 
+
+  for (uint8_t pin=0; pin<16; pin++) {
+	  charDisp0.setPWM(pin, 4096, 0);       // turns pin fully on
+	  delay(100);
+	  charDisp0.setPWM(pin, 0, 4096);       // turns pin fully off
+	  //delay(400);
+  }
 }
-
-
-//https://github.com/NachtRaveVL/PCA9685-Arduino/blob/master/examples/SimpleExample/SimpleExample.ino
 
 
 
@@ -108,3 +168,42 @@ void enableChar(int _charToEnable){
 	}
 	
 }
+
+
+
+/*
+LED0	C	3
+LED1	L	12
+LED2	D2	4
+LED3	M	13
+LED4	N	14
+LED5	D1	5
+LED6	E	6
+LED7	P	15
+
+LED8	K	11
+LED9	F	7
+LED10	G	8
+LED11	A1	0
+LED12	H	9
+LED13	J	10
+LED14	A2	1
+LED15	B	2
+*/
+
+
+//	U	T	S	R	P	N	M	K	H	G	F	E	 D	C	B	A
+//	P	N	M	L	K	J	H	G	F	E	D1	D2	C	B	A2	A1
+//	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
+
+// mapping from ascii library to hardware layout, i.e.: 0b0000000000000001 == LED 11
+// const int bitToPCA9685Map [16] = {11,14,15,0,2,5,6,9,10,12,13,8,1,3,4,7};
+//
+// void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver *_charDisplay){
+// 	for(int i = 0; i < 16; i++){
+// 		if((1 << i) & _charToShow){
+// 			//LED11
+// 			_charDisplay->setPin(i,4095,false);
+// 		}
+// 	}
+// }
