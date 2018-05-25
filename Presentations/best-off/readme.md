@@ -10,9 +10,11 @@ Wesley Lee is a designer from Sao Paulo, Brazil. His work
 ## Titel:	
 #Linobyte
 
-## Schlagwörter (max. 6) * / Keywords:
+## Schlagwörter (max. 6)/ Keywords:
 
-## Kurzbeschreibung (max. 200 Wörter) * / Shrot description:	
+Hardware, Media-Archeology, Electronics, Interactive, Memory
+
+## Kurzbeschreibung (max. 200 Wörter)/ Shrot description:	
 
 As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Added to that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
 
