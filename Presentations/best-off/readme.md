@@ -1,10 +1,13 @@
-## Biographie (max. 150 Wörter) *:  
+## Biographie:
+(max. 150 Words)  
 
-## Artist-Statement (max. 200 Wörter) *:
+Wesley Lee is a designer from Sao Paulo, Brazil. His work
 
+## Artist-Statement:
+(max. 200 Words)  
 
 ---------------------------------------------------------------
-## Titel *:	
+## Titel:	
 #Linobyte
 
 ## Schlagwörter (max. 6) * / Keywords:
