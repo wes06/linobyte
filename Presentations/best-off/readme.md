@@ -25,7 +25,9 @@ Its with these preocupations in mind that Linobyte came into existence. It conci
 ---------------------------------------------------------------
 
 
-Projektbilder (max. 5 Bilder, Dateiformate: jpg, png, gif)
+## Projektbilder
+
+(max. 5 Bilder, Dateiformate: jpg, png, gif)
 Die maximale Länge bzw. Breite der Bilder: 3000px und die maximale Dateigröße 4MB.
 
 Project pictures (max 5 pictures, file formats: jpg, png, gif)
@@ -34,14 +36,15 @@ The maximum length or width of the pictures: 3000px and the maximum file size 4M
 
 ---------------------------------------------------------------
 
-Projektproposal und Portfolio upload (nur PDF)*
+## Projektproposal und Portfolio upload (nur PDF)
+
 Bitte zwei Dateien hochladen:
 - ein Projektproposal als PDF (als Vorlage kann hierfür das Muster >>„Projekteinreichung- Production rider“ fungieren, ist jedoch nicht verpflichtend.)
 - ein Portfolio als PDF
 
 
 
-Project proposal and portfolio upload (PDF only) *
+Project proposal and portfolio upload (PDF only)
 Please upload two files:
 - a project proposal as a PDF (the model >> "project submission - production rider" can serve as template, but is not obligatory)
 - a portfolio as a PDF
