@@ -1,22 +1,22 @@
-##Biographie (max. 150 Wörter) *:  
+## Biographie (max. 150 Wörter) *:  
 
-##Artist-Statement (max. 200 Wörter) *:
+## Artist-Statement (max. 200 Wörter) *:
 
 
 ---------------------------------------------------------------
-##Titel *:	
+## Titel *:	
 #Linobyte
 
-##Schlagwörter (max. 6) * / Keywords:
+## Schlagwörter (max. 6) * / Keywords:
 
-##Kurzbeschreibung (max. 200 Wörter) * / Shrot description:	
+## Kurzbeschreibung (max. 200 Wörter) * / Shrot description:	
 
 As computational devices evolve, more tools and interfaces are built between the user and the machine. This allows us to complete increasingly complex tasks without having to focus so much on understanding the nuances of the machine. While this movement is certainly overall positive, one of the drawbacks is that people no longer learn the fundamental processes and concepts which allow the tool to work. Added to that, by neglecting history, we forget the alternatives of the technologies that we use today - forgotten alternatives that maybe once were the status quo. Understanding of those alternatives would give us a broader view of the pros and cons of what we have today, how they superseded their ancestors and what are their pitfalls - important knowledge for those who design possible futures.
 
 Its with these preocupations in mind that Linobyte came into existence. It conciliates the explanation of how bits, bytes and chars work, with a hands on experience of creating Core Rope ROMs: read-only memories that were written by weaving an enameled copper wire through ferrite cores.
 
 
-##Zusätzliche Information (ev. Link zu Video,…) Link to Video
+## Zusätzliche Information (ev. Link zu Video,…) Link to Video
 
 
 ---------------------------------------------------------------
