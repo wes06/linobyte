@@ -3,9 +3,7 @@
 #include <Wire.h>
 #include "wiring_private.h"
 #include <Adafruit_MCP23008.h>
-//Beginning of Auto generated function prototypes by Atmel Studio
-void enableChar(int _charToEnable);
-//End of Auto generated function prototypes by Atmel Studio
+
 
 Adafruit_MCP23008 mcp_bits;
 Adafruit_MCP23008 mcp_status;
@@ -21,9 +19,32 @@ TwoWire displayI2C(&sercom1, 11, 13);
 //Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x41);
 // you can also call it with a different address and I2C interface
 //Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(&Wire, 0x40);
-Adafruit_PWMServoDriver charDisp0 = Adafruit_PWMServoDriver(&displayI2C, 0x40);
+
+//Adafruit_PWMServoDriver charDisp0 = Adafruit_PWMServoDriver(&displayI2C, 0x40);
+
+Adafruit_PWMServoDriver charDisp[] =
+{
+	Adafruit_PWMServoDriver(&displayI2C, 0x40),
+	Adafruit_PWMServoDriver(&displayI2C, 0x41),
+	Adafruit_PWMServoDriver(&displayI2C, 0x42),
+	Adafruit_PWMServoDriver(&displayI2C, 0x44),
+	Adafruit_PWMServoDriver(&displayI2C, 0x45),
+	Adafruit_PWMServoDriver(&displayI2C, 0x46),
+	Adafruit_PWMServoDriver(&displayI2C, 0x47),
+	Adafruit_PWMServoDriver(&displayI2C, 0x48)
+};
+
+
+
+
 
 #include "ASCII-16Seg.h"
+
+//Beginning of Auto generated function prototypes by Atmel Studio
+void enableChar(int _charToEnable);
+void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp);
+//End of Auto generated function prototypes by Atmel Studio
+
 
 void setup() {
 
@@ -33,6 +54,7 @@ void setup() {
 	mcp_bits.begin(0);
 	mcp_status.begin(1);
 	
+	// i2c for mcp23008
 	Wire.setClock(400000);
 	
 	
@@ -59,12 +81,12 @@ void setup() {
 	pinMode(1, OUTPUT);
 	pinMode(3, OUTPUT);
 	pinMode(4, OUTPUT);
+	
 	//enable decoder
 	digitalWrite(0,HIGH);
 	
-	
 	displayI2C.begin();
-	displayI2C.setClock(100000);
+	displayI2C.setClock(400000);
 	
 	// Assign pins 13 & 11 to SERCOM functionality
 	pinPeripheral(11, PIO_SERCOM);
@@ -73,14 +95,14 @@ void setup() {
 
 
 	//charDisp0.begin();
-	charDisp0.setPWMFreq(1000);  // This is the maximum PWM frequen
-	
+	charDisp[0].setPWMFreq(1000);
 	
 }
 
 
 
 int decoderDelay = 100;
+int charToWrite = 33;
 
 void loop() {
 	for (int i = 0; i<8;i++){
@@ -111,12 +133,11 @@ void loop() {
 	}
 
 
-  for (uint8_t pin=0; pin<16; pin++) {
-	  charDisp0.setPWM(pin, 4096, 0);       // turns pin fully on
-	  delay(100);
-	  charDisp0.setPWM(pin, 0, 4096);       // turns pin fully off
-	  //delay(400);
-  }
+	writeCharDisp(charToWrite, charDisp[0]);
+	charToWrite++;
+	if(charToWrite == 59) charToWrite = 33;
+	delay(200);
+	
 }
 
 
@@ -197,13 +218,15 @@ LED15	B	2
 //	15	14	13	12	11	10	9	8	7	6	5	4	3	2	1	0
 
 // mapping from ascii library to hardware layout, i.e.: 0b0000000000000001 == LED 11
-// const int bitToPCA9685Map [16] = {11,14,15,0,2,5,6,9,10,12,13,8,1,3,4,7};
-//
-// void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver *_charDisplay){
-// 	for(int i = 0; i < 16; i++){
-// 		if((1 << i) & _charToShow){
-// 			//LED11
-// 			_charDisplay->setPin(i,4095,false);
-// 		}
-// 	}
-// }
+const int bitToPCA9685Map [16] = {11,14,15,0,2,5,6,9,10,12,13,8,1,3,4,7};
+
+void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp){
+	for(int i = 0; i < 16; i++){
+		if((1 << i) & SixteenSegmentASCII[_charToShow]){
+			_charDisp.setPin(bitToPCA9685Map[i],1024,true);
+		}
+		else{
+			_charDisp.setPin(bitToPCA9685Map[i],0,true);
+		}
+	}
+}
