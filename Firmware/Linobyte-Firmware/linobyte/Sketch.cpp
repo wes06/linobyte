@@ -24,14 +24,14 @@ TwoWire displayI2C(&sercom1, 11, 13);
 
 Adafruit_PWMServoDriver charDisp[] =
 {
-	Adafruit_PWMServoDriver(&displayI2C, 0x40),
-	Adafruit_PWMServoDriver(&displayI2C, 0x41),
-	Adafruit_PWMServoDriver(&displayI2C, 0x42),
-	Adafruit_PWMServoDriver(&displayI2C, 0x44),
-	Adafruit_PWMServoDriver(&displayI2C, 0x45),
-	Adafruit_PWMServoDriver(&displayI2C, 0x46),
-	Adafruit_PWMServoDriver(&displayI2C, 0x47),
-	Adafruit_PWMServoDriver(&displayI2C, 0x48)
+	Adafruit_PWMServoDriver(&displayI2C, 0x60),
+	Adafruit_PWMServoDriver(&displayI2C, 0x61),
+	Adafruit_PWMServoDriver(&displayI2C, 0x62),
+	Adafruit_PWMServoDriver(&displayI2C, 0x63),
+	Adafruit_PWMServoDriver(&displayI2C, 0x64),
+	Adafruit_PWMServoDriver(&displayI2C, 0x65),
+	Adafruit_PWMServoDriver(&displayI2C, 0x66),
+	Adafruit_PWMServoDriver(&displayI2C, 0x67)
 };
 
 
@@ -93,47 +93,57 @@ void setup() {
 	pinPeripheral(13, PIO_SERCOM);
 
 
-
-	//charDisp0.begin();
-	charDisp[0].setPWMFreq(1000);
+	for(int i = 0; i< 8; i++){
+		//charDisp0.begin();
+		charDisp[i].setPWMFreq(1000);
+	}
 	
 }
-
-
 
 int decoderDelay = 100;
 int charToWrite = 33;
 
+int charBeingChecked = 0;
+
 void loop() {
-	for (int i = 0; i<8;i++){
-		SerialUSB.print(i);
-		SerialUSB.print(" being checked...");
-		SerialUSB.print("");
-		
-		enableChar(i);
-		delayMicroseconds(15000);
-		
-		SerialUSB.print(mcp_status.digitalRead(7-i));
-		if(mcp_status.digitalRead(7-i)){
+	
+	enableChar(charBeingChecked);
+	
+	SerialUSB.print(charBeingChecked);
+	SerialUSB.print(" being checked...");
+	SerialUSB.print("");
+	
+	
+	delayMicroseconds(15000);
+	
+	SerialUSB.print(mcp_status.digitalRead(7-charBeingChecked));
+	
+	if(mcp_status.digitalRead(7-charBeingChecked)){
 
-			SerialUSB.print("\tAttached: ");
-			SerialUSB.write(mcp_bits.readGPIO());
-			SerialUSB.print(SixteenSegmentASCII[mcp_bits.readGPIO()-32],BIN);
-			/*
-			// Array starts with "space", ASCII no 32, hence "-32"
-			SixteenSegmentASCII[mcp_bits.readGPIO()-32]
-			*/
+		SerialUSB.print("\tAttached: ");
+		SerialUSB.write(mcp_bits.readGPIO());
+		SerialUSB.print(SixteenSegmentASCII[mcp_bits.readGPIO()-32],BIN);
+		/*
+		// Array starts with "space", ASCII no 32, hence "-32"
+		SixteenSegmentASCII[mcp_bits.readGPIO()-32]
+		*/
 
-			SerialUSB.println();
-		}
-		else{
-			SerialUSB.print("\tNot Attached...\r\n");
-		}
-		delayMicroseconds(15000);
+		SerialUSB.println();
 	}
+	else{
+		SerialUSB.print("\tNot Attached...\r\n");
+	}
+	//delayMicroseconds(15000);
 
 
-	writeCharDisp(charToWrite, charDisp[0]);
+	charBeingChecked++;
+	if(charBeingChecked == 8) charBeingChecked = 0;
+	
+	
+	for(int i = 0; i< 8; i++){
+		
+		writeCharDisp(charToWrite, charDisp[i]);
+	}
 	charToWrite++;
 	if(charToWrite == 59) charToWrite = 33;
 	delay(200);
@@ -223,7 +233,7 @@ const int bitToPCA9685Map [16] = {11,14,15,0,2,5,6,9,10,12,13,8,1,3,4,7};
 void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp){
 	for(int i = 0; i < 16; i++){
 		if((1 << i) & SixteenSegmentASCII[_charToShow]){
-			_charDisp.setPin(bitToPCA9685Map[i],1024,true);
+			_charDisp.setPin(bitToPCA9685Map[i],4096,true);
 		}
 		else{
 			_charDisp.setPin(bitToPCA9685Map[i],0,true);
