@@ -1,7 +1,12 @@
 # LINOBYTE
 
 
-![Preliminary Render](./Img/Renders/sketch2.png)  
+
+![Linobyte](./Img/Photos/_DSC1322.jpg)
+
+<img src="./Img/Photos/_DSC0927-2.jpg" height="300">
+<img src="./Img/Photos/_DSC1329.jpg" height="250">
+
 
 ## Table of Contents
 
