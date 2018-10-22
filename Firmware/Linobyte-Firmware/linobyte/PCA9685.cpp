@@ -149,6 +149,24 @@ void Adafruit_PWMServoDriver::setPWM(uint8_t num, uint16_t on, uint16_t off) {
 	_i2c->endTransmission();
 }
 
+
+
+
+void Adafruit_PWMServoDriver::setAllOff(){
+
+	_i2c->beginTransmission(_i2caddr);
+	_i2c->write(0xFA);
+	_i2c->write(0b11111111);
+	_i2c->write(0b11111111);
+	_i2c->write(0b00000000);
+	_i2c->write(0b00000000);
+	_i2c->endTransmission();
+
+}
+
+
+
+
 /**************************************************************************/
 /*!
 @brief  Helper to set pin PWM output. Sets pin without having to deal with on/off tick placement and properly handles a zero value as completely off and 4095 as completely on.  Optional invert parameter supports inverting the pulse for sinking to ground.

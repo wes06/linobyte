@@ -3,24 +3,14 @@
 #include <Wire.h>
 #include "wiring_private.h"
 #include <Adafruit_MCP23008.h>
+#include "PCA9685.h"
 
+#include "ASCII-16Seg.h"
 
 Adafruit_MCP23008 mcp_bits;
 Adafruit_MCP23008 mcp_status;
 
 TwoWire displayI2C(&sercom1, 11, 13);
-
-//https://github.com/adafruit/Adafruit-PWM-Servo-Driver-Library
-#include "PCA9685.h"
-
-// called this way, it uses the default address 0x40
-//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
-// you can also call it with a different address you want
-//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(0x41);
-// you can also call it with a different address and I2C interface
-//Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(&Wire, 0x40);
-
-//Adafruit_PWMServoDriver charDisp0 = Adafruit_PWMServoDriver(&displayI2C, 0x40);
 
 Adafruit_PWMServoDriver charDisp[] =
 {
@@ -38,43 +28,36 @@ Adafruit_PWMServoDriver charDisp[] =
 
 
 
-#include "ASCII-16Seg.h"
 
-//Beginning of Auto generated function prototypes by Atmel Studio
+
+//function prototypes
 void enableChar(int _charToEnable);
-void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp);
-//End of Auto generated function prototypes by Atmel Studio
+void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp, uint16_t _brightness);
+void writeCharDisp_Off(Adafruit_PWMServoDriver& _charDisp);
+
+EPortType port1;
+EPortType port3;
+EPortType port4;
+
+uint32_t pinMask1;
+uint32_t pinMask3;
+uint32_t pinMask4;
+
 
 
 void setup() {
 
 	SerialUSB.begin(500000);
 	
-	
-	mcp_bits.begin(0);
-	mcp_status.begin(1);
+	mcp_bits.begin(0); // address 0
+	mcp_status.begin(1); // address 1
 	
 	// i2c for mcp23008
 	Wire.setClock(400000);
 	
-	
-	mcp_bits.pinMode(0, INPUT);
-	mcp_bits.pinMode(1, INPUT);
-	mcp_bits.pinMode(2, INPUT);
-	mcp_bits.pinMode(3, INPUT);
-	mcp_bits.pinMode(4, INPUT);
-	mcp_bits.pinMode(5, INPUT);
-	mcp_bits.pinMode(6, INPUT);
-	mcp_bits.pinMode(7, INPUT);
-	
-	mcp_status.pinMode(0, INPUT);
-	mcp_status.pinMode(1, INPUT);
-	mcp_status.pinMode(2, INPUT);
-	mcp_status.pinMode(3, INPUT);
-	mcp_status.pinMode(4, INPUT);
-	mcp_status.pinMode(5, INPUT);
-	mcp_status.pinMode(6, INPUT);
-	mcp_status.pinMode(7, INPUT);
+	// sets pins in both MCP23008 as INPUTs
+	mcp_bits.write8(MCP23008_IODIR, 0b11111111);
+	mcp_status.write8(MCP23008_IODIR, 0b11111111);
 
 	//decoder
 	pinMode(0, OUTPUT);
@@ -86,7 +69,7 @@ void setup() {
 	digitalWrite(0,HIGH);
 	
 	displayI2C.begin();
-	displayI2C.setClock(400000);
+	displayI2C.setClock(800000);
 	
 	// Assign pins 13 & 11 to SERCOM functionality
 	pinPeripheral(11, PIO_SERCOM);
@@ -94,59 +77,137 @@ void setup() {
 
 
 	for(int i = 0; i< 8; i++){
-		//charDisp0.begin();
 		charDisp[i].setPWMFreq(1000);
+		writeCharDisp_Off(charDisp[i]);
+		//writeCharDisp(0, charDisp[i], 4095);
 	}
 	
+	
+	port1 = g_APinDescription[1].ulPort;
+	uint32_t pin1 = g_APinDescription[1].ulPin;
+	pinMask1 = (1ul << pin1);
+	
+	port3 = g_APinDescription[3].ulPort;
+	uint32_t pin3 = g_APinDescription[3].ulPin;
+	pinMask3 = (1ul << pin3);
+	
+	port4 = g_APinDescription[4].ulPort;
+	uint32_t pin4 = g_APinDescription[4].ulPin;
+	pinMask4 = (1ul << pin4);
 }
 
-int decoderDelay = 100;
-int charToWrite = 33;
 
 int charBeingChecked = 0;
 
+double delayBetweenChars = 1000000.0f;
+int charsLooped = 1;
+
+
+unsigned long lastStep = 0;
+
+int mcpVal = 0;
+
+int delayState = 0;
+
 void loop() {
 	
-	enableChar(charBeingChecked);
-	
-	SerialUSB.print(charBeingChecked);
-	SerialUSB.print(" being checked...");
-	SerialUSB.print("");
-	
-	
-	delayMicroseconds(15000);
-	
-	SerialUSB.print(mcp_status.digitalRead(7-charBeingChecked));
-	
-	if(mcp_status.digitalRead(7-charBeingChecked)){
-
-		SerialUSB.print("\tAttached: ");
-		SerialUSB.write(mcp_bits.readGPIO());
-		SerialUSB.print(SixteenSegmentASCII[mcp_bits.readGPIO()-32],BIN);
-		/*
-		// Array starts with "space", ASCII no 32, hence "-32"
-		SixteenSegmentASCII[mcp_bits.readGPIO()-32]
-		*/
-
-		SerialUSB.println();
-	}
-	else{
-		SerialUSB.print("\tNot Attached...\r\n");
-	}
-	//delayMicroseconds(15000);
 
 
-	charBeingChecked++;
-	if(charBeingChecked == 8) charBeingChecked = 0;
 	
+	// 	SerialUSB.print(charBeingChecked);
+	// 	SerialUSB.print(" being checked...");
+	// 	SerialUSB.print("");
+	//
+	//
+	// 	//delayMicroseconds(15000);
+	//
+	// 	SerialUSB.print(mcp_status.digitalRead(7-charBeingChecked));
+	//
+	// 	//	if(mcp_status.digitalRead(7-charBeingChecked)){
+	//
+	// 	SerialUSB.print("\tAttached: ");
+	// 	SerialUSB.write(mcp_bits.readGPIO());
+	// 	SerialUSB.print(SixteenSegmentASCII[mcp_bits.readGPIO()-32],BIN);
+	//
+	//
+	// 	/*
+	// 	// Array starts with "space", ASCII no 32, hence "-32"
+	// 	SixteenSegmentASCII[mcp_bits.readGPIO()-32]
+	// 	*/
+	//
+
+	// 	SerialUSB.println();
+	// 	}
+	// 	else{
+	// 		SerialUSB.print("\tNot Attached...\r\n");
+	// 	}
 	
-	for(int i = 0; i< 8; i++){
+
+	if(micros() - lastStep > delayBetweenChars){
+		lastStep = micros();
+		enableChar(charBeingChecked);
+		if(delayBetweenChars > 2000){
+			delay(2);
+		}
+		else{
+			//
+		}
+
+		// reads the char
+		mcpVal = mcp_bits.readGPIO() - 32;
+
+		if(delayState != 2){
+			if (mcpVal > 32 && mcpVal < 59){
+				writeCharDisp(mcpVal, charDisp[charBeingChecked], 4095);
+			}
+			else{
+				writeCharDisp(999,charDisp[charBeingChecked],4095);
+			}
+			
+			
+			if(charBeingChecked !=0)
+			writeCharDisp_Off(charDisp[charBeingChecked-1]);
+			else
+			writeCharDisp_Off(charDisp[7]);
+		}
 		
-		writeCharDisp(charToWrite, charDisp[i]);
+		
+		
+		if(delayState == 0){
+			delayBetweenChars = delayBetweenChars/1.02f;
+			if (delayBetweenChars < 1500) delayState++;
+		}
+		else if(delayState == 1){
+			delayBetweenChars = 0;
+			if(charsLooped > 800) delayState++;
+		}
+		else if(delayState == 2){
+			//delay(10000);
+			if (mcpVal > 32 && mcpVal < 59){
+				//writeCharDisp(mcpVal, charDisp[charBeingChecked], 1000);
+				writeCharDisp(mcpVal, charDisp[charBeingChecked], 4095);
+			}
+			else{
+				writeCharDisp(999,charDisp[charBeingChecked],1000);
+			}
+			if(charsLooped > 3000) {
+				for(int i = 0; i < 8; i++){
+					writeCharDisp_Off(charDisp[i]);
+					
+				}
+				delayState = 0;
+				charsLooped = 1;
+				delayBetweenChars = 1000000.0f;
+			}
+		}
+
+		charBeingChecked++;
+		if(charBeingChecked == 8) {
+			charBeingChecked = 0;
+			charsLooped++;
+
+		}	
 	}
-	charToWrite++;
-	if(charToWrite == 59) charToWrite = 33;
-	delay(200);
 	
 }
 
@@ -157,44 +218,48 @@ void enableChar(int _charToEnable){
 	switch (_charToEnable)
 	{
 		case 0:
-		digitalWrite(1,LOW); // A0
-		digitalWrite(3,LOW); // A1
-		digitalWrite(4,LOW); // A2
+		PORT->Group[port1].OUTCLR.reg = pinMask1; // A0
+		PORT->Group[port3].OUTCLR.reg = pinMask3; // A1
+		PORT->Group[port4].OUTCLR.reg = pinMask4; // A2
 		break;
 		case 1:
-		digitalWrite(1,HIGH); // A0
-		digitalWrite(3,LOW); // A1
-		digitalWrite(4,LOW); // A2
+		PORT->Group[port1].OUTSET.reg = pinMask1;
+		//PORT->Group[port3].OUTCLR.reg = pinMask3;
+		//PORT->Group[port4].OUTCLR.reg = pinMask4;
 		break;
 		case 2:
-		digitalWrite(1,LOW); // A0
-		digitalWrite(3,HIGH); // A1
-		digitalWrite(4,LOW); // A2
+		PORT->Group[port1].OUTCLR.reg = pinMask1;
+		PORT->Group[port3].OUTSET.reg = pinMask3;
+		//PORT->Group[port4].OUTCLR.reg = pinMask4;
 		break;
 		case 3:
-		digitalWrite(1,HIGH); // A0
-		digitalWrite(3,HIGH); // A1
-		digitalWrite(4,LOW); // A2
+		
+		PORT->Group[port1].OUTSET.reg = pinMask1;
+		PORT->Group[port3].OUTSET.reg = pinMask3;
+		//PORT->Group[port4].OUTCLR.reg = pinMask4;
 		break;
 		case 4:
-		digitalWrite(1,LOW); // A0
-		digitalWrite(3,LOW); // A1
-		digitalWrite(4,HIGH); // A2
+		
+		PORT->Group[port1].OUTCLR.reg = pinMask1;
+		PORT->Group[port3].OUTCLR.reg = pinMask3;
+		PORT->Group[port4].OUTSET.reg = pinMask4;
 		break;
 		case 5:
-		digitalWrite(1,HIGH); // A0
-		digitalWrite(3,LOW); // A1
-		digitalWrite(4,HIGH); // A2
+		
+		PORT->Group[port1].OUTSET.reg = pinMask1;
+		//PORT->Group[port3].OUTCLR.reg = pinMask3;
+		//PORT->Group[port4].OUTSET.reg = pinMask4;
 		break;
 		case 6:
-		digitalWrite(1,LOW); // A0
-		digitalWrite(3,HIGH); // A1
-		digitalWrite(4,HIGH); // A2
+		PORT->Group[port1].OUTCLR.reg = pinMask1;
+		PORT->Group[port3].OUTSET.reg = pinMask3;
+		//PORT->Group[port4].OUTSET.reg = pinMask4;
 		break;
 		case 7:
-		digitalWrite(1,HIGH); // A0
-		digitalWrite(3,HIGH); // A1
-		digitalWrite(4,HIGH); // A2
+		
+		PORT->Group[port1].OUTSET.reg = pinMask1;
+		//PORT->Group[port3].OUTSET.reg = pinMask3;
+		//PORT->Group[port4].OUTSET.reg = pinMask4;
 		break;
 	}
 	
@@ -230,13 +295,21 @@ LED15	B	2
 // mapping from ascii library to hardware layout, i.e.: 0b0000000000000001 == LED 11
 const int bitToPCA9685Map [16] = {11,14,15,0,2,5,6,9,10,12,13,8,1,3,4,7};
 
-void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp){
+void writeCharDisp(uint16_t _charToShow, Adafruit_PWMServoDriver& _charDisp, uint16_t _brightness){
+
 	for(int i = 0; i < 16; i++){
 		if((1 << i) & SixteenSegmentASCII[_charToShow]){
-			_charDisp.setPin(bitToPCA9685Map[i],4096,true);
+			_charDisp.setPin(bitToPCA9685Map[i],_brightness,true);
 		}
 		else{
 			_charDisp.setPin(bitToPCA9685Map[i],0,true);
 		}
 	}
+
+}
+
+
+void writeCharDisp_Off(Adafruit_PWMServoDriver& _charDisp){
+	_charDisp.setAllOff();
+	
 }
