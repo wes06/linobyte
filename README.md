@@ -39,7 +39,7 @@ So, if the user wants to write the "A" character, the steps should be the follow
 5. Check the character on a screen and correct or proceed to the next character.
 
 
-![A example](./Img/Renders/sketch_weaved_overlaid.png) 
+![A example](https://raw.githubusercontent.com/wes06/linobyte/master/Img/Renders/sketch_weaved_overlaid.png) 
 
 ASCII table:  
 (I'm aware that ASCII chars only require 7 bits and not 8)
@@ -55,7 +55,7 @@ Core memory experiment from http://www.timui.org/2015/
 
 Coils are out of order in the following diagram:
 
-![Preliminary Functional Block Diagram](./Img/Block%20Diagrams/preliminary-block-diagram.png)
+![Preliminary Functional Block Diagram](https://raw.githubusercontent.com/wes06/linobyte/master/Img/Block%20Diagrams/preliminary-block-diagram.png)
 
 (So, basically, 1 word = 8 chars = 8 bytes = 8 * 8 bits)
 
@@ -86,11 +86,11 @@ Microcontrollers and ICs in general will use 3.3V. I might want to power the coi
 
 ## <a name="simulations"></a>Simulations
 
-Current pulses seem enough even with limited current. I have assembled a few coils and I'm waiting to either test them in Linz where I have my oscilloscope or borrow one while I'm in Brazil.
+As I designed it away from my workbench, I had to simulate some parts instead of prototyping it.
 
-![](./Img/Simulation/linobyte-circuitlab-schematic.png)
-![](./Img/Simulation/linobyte-circuitlab-voltage.png)
-![](./Img/Simulation/linobyte-circuitlab-current.png)
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/Simulation/linobyte-circuitlab-schematic.png)
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/Simulation/linobyte-circuitlab-voltage.png)
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/Simulation/linobyte-circuitlab-current.png)
 
 
 ## <a name="pcbs"></a>PCBs
@@ -100,19 +100,19 @@ As of 19/April.
 
 2D view:  
 
-![](./Img/PCB/04-19-PCB-2D.png)  
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/PCB/04-19-PCB-2D.png)  
 
 3D view:  
-![](./Img/PCB/04-19-PCB-3D.png)
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/PCB/04-19-PCB-3D.png)
 
 As of 10/April.  
 
 2D view:  
 
-![](./Img/PCB/04-10-PCB-2D.png)  
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/PCB/04-10-PCB-2D.png)  
 
 3D view:  
-![](./Img/PCB/04-10-PCB-3D.png)
+![](https://raw.githubusercontent.com/wes06/linobyte/master/Img/PCB/04-10-PCB-3D.png)
 
 
 ## <a name="naming"></a>Naming
@@ -125,42 +125,37 @@ The name is a pun with the term linotype and byte:
 
 
 
-## Refs
+## Refs during research
 
-aulis.com/pascal.htm
-
-14 Segment ASCII library  
-https://github.com/dmadison/LED-Segment-ASCII
-
-http://drhart.ucoz.com/index/core_memory/0-123
-
-http://www.ciphersbyritter.com/MARK8/MAGCORE/MAGCORE.HTM
+Hartmann, R. (n.d.). drhart - Core Rope Memory. [online] Drhart.ucoz.com. Available at: http://drhart.ucoz.com/index/core_memory/0-123 [Accessed Apr. 2018].
 
 
-http://qrp.gr/coreROM/
+http://qrp.gr. (n.d.). Core rope memory. [online] Available at: http://qrp.gr/coreROM/ [Accessed Apr. 2018].
 
-https://monster6502.com/
+Ritter, T. (2002). A Magnetic Core ROM. [online] Ciphersbyritter.com. Available at: http://www.ciphersbyritter.com/MARK8/MAGCORE/MAGCORE.HTM [Accessed Apr. 2018].)
 
-ROD ROM
-http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/
+Ryals, P. (2012). Jacquard Looms and Rod ROMs. [online] Museum of Computer Culture. Available at: http://www.computerculture.org/2012/10/jacquard-looms-and-rod-roms/ [Accessed Apr. 2018].
 
-
-Neil on how transformers work.
-https://electronics.stackexchange.com/a/221279/61257
-
-https://electronics.stackexchange.com/questions/116195/how-to-build-very-low-cost-current-transformer
-https://electronics.stackexchange.com/questions/335570/ac-current-sensing-switch-using-current-transformer
-https://electronics.stackexchange.com/questions/136086/how-do-i-design-a-current-transformer
+Schlaepfer, E. (n.d.). MOnSter 6502. [online] Monster6502.com. Available at: https://monster6502.com/ [Accessed Apr. 2018].
 
 
-Edge Coupled Microstrip Calculation:  
-Tw=0.25mm Ts=0.25mm 
-https://www.eeweb.com/tools/edge-coupled-microstrip-impedance
 
-PCBWAY Stackup
-https://www.pcbway.com/multi-layer-laminated-structure.html
+## Examples and references during design
 
-### Comparators:
+
+Pcbway.com. (n.d.). 4-layer PCB standard stackup. [online] Available at: https://www.pcbway.com/multi-layer-laminated-structure.html [Accessed May 2018].
+
+Eeweb.com. (n.d.) Edge Coupled Microstrip Impedance Calculator. [online] Available at: https://www.eeweb.com/tools/edge-coupled-microstrip-impedance [Accessed May 2018, Tw=0.25mm Ts=0.25mm]
+
+GitHub. (2017). dmadison/LED-Segment-ASCII. [online] Available at: https://github.com/dmadison/LED-Segment-ASCII [Accessed 10 Sep. 2018].
+
+[Could Sawtooth waveform be optimal for transoformer input?](https://electronics.stackexchange.com/a/221279/61257)
+
+[How to build a low cost current transformer](https://electronics.stackexchange.com/questions/116195/how-to-build-very-low-cost-current-transformer)
+
+[AC current sensing using current transformer](https://electronics.stackexchange.com/questions/335570/ac-current-sensing-switch-using-current-transformer)
+
+[How do I design a current transformer](https://electronics.stackexchange.com/questions/136086/how-do-i-design-a-current-transformer)
 
 Maxim App note 3616, Adding extra histeresis to comparators  
 https://www.maximintegrated.com/en/app-notes/index.mvp/id/3616
@@ -169,19 +164,18 @@ Texas Instruments: Comparator with histeresis reference design
 http://www.ti.com/lit/ug/tidu020a/tidu020a.pdf
 
 
-## BOM
+## Potential Items for Bill of Materials
 
 Potential coils: 9mm x 16mm x 5mm (inner, outer, thickness)  
-https://www2.mouser.com/Passive-Components/Ferrites/Ferrite-Toroids-Ferrite-Rings/_/N-fb8t7Z1yzvvqx?P=1ya7hnoZ1z0vsmwZ1z0vsssZ1z0vsa5Z1z0vsltZ1z0vrn7&Rl=fb8t7ZerbuZ1yxgwg4Z1yzmqroSGT&Ns=Inside%20Diameter|1
+[Mouser](https://www2.mouser.com/Passive-Components/Ferrites/Ferrite-Toroids-Ferrite-Rings/_/N-fb8t7Z1yzvvqx?P=1ya7hnoZ1z0vsmwZ1z0vsssZ1z0vsa5Z1z0vsltZ1z0vrn7&Rl=fb8t7ZerbuZ1yxgwg4Z1yzmqroSGT&Ns=Inside%20Diameter|1)
 
 Kemet ESD - R Series
 
-Schmitt Trigger Octal Non Inverting  
-https://www.mouser.at/ProductDetail/Nexperia/74HC7541PW118?qs=sGAEpiMZZMtOwpHsRTkso4N4DgL6o1r6unaSV%252bVDkdI%3d
+[S]chmitt Trigger Octal Non Inverting](https://www.mouser.at/ProductDetail/Nexperia/74HC7541PW118?qs=sGAEpiMZZMtOwpHsRTkso4N4DgL6o1r6unaSV%252bVDkdI%3d)
 
-3 to 8 decoder  
-74HC138  
-https://www.mouser.at/datasheet/2/302/74HC_HCT138-1148685.pdf
+
+[3 to 8 decoder, 74HC138](https://www.mouser.at/datasheet/2/302/74HC_HCT138-1148685.pdf)
+
 
 8 to 3 encoder (Auto adressing on 16 Segment Displays (shift decoded 1:8 by 1, adds 1 to 3 bit value))
 
