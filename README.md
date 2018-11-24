@@ -50,38 +50,6 @@ Core memory experiment from http://www.timui.org/2015/
 
 <img src="http://3.bp.blogspot.com/--asz_UrCd6c/VbUkzhFK_yI/AAAAAAAAZhI/DOXbYy7dYb0/s1600/DSCF0517.JPG" width="300">
 
-## <a name="presentation-formats"></a>Potential presentation formats at Ars Electronica
-
-While one of the main goals of the object is to provide a hands on experience, this was conceived for a more controlled environment in a smaller event (Media Archeology workshop) so I'm not entirely sure if its a good idea to fully expose the object during Ars Electronica.
-
-I see two possible scenarios, one where it is interactive, other where its assembled and working but where the public wont be able to touch it.
-
-- **Interactive**  
-   1. Object is fully exposed (in view and touchable) to the public.
-   2. Object is not fully exposed (in view, but not fully touchable) to the public, but the coils are assembled in a way that you can weave through them without touching the rest of the object. (I mount the coils in an acrylic panel with extended wires for example)
-
-- **Non-interactive**   
-   1. Object is exposed working but out of reach of the public. A video is shown with the process of weaving the wire. 
-
-For either case, I'm considering making and printing a few ASCII tables and binary conversion charts.
-
-
-## <a name="dates"></a>Important dates:
-
-- finish the "Char" PCB design (3rd week of April)
-- Sending the Char Gerber files to the manufacturer (4th week of April)
-- Finishing the "Word" (Main board) PCB design (4th week of April)
-- Send the "Word" Gerber files to the manufacturer (4th week of April)
-- Finish the Bill of Materials and order the components from Mouser (End of April)
-- Assemble the char boards (1st week of May)
-- Assemble the word boards (1st week of May)
-- Test the boards and finish the firmware. (2nd week of May)
-- Test the boards as HID Keyboard (3rd week of May)
-- Decide if I want to build an external custom display (e-ink, 16 segments, 5x7 array, etc)
-- Media Archeology workshop (4th week of May)
-
-
-
 
 ## <a name="block-diagram"></a>Functional Block Diagram
 
@@ -154,27 +122,6 @@ The name is a pun with the term linotype and byte:
 "Linotype, typesetting machine by which characters are cast in type metal as a complete line rather than as individual characters as on the Monotype typesetting machine."
 
 [Encyclopaedia Britannica on "Linotype"](https://www.britannica.com/technology/Linotype)  
-
-
-
-## <a name="to-dos"></a>Minor To dos
-
-1. Sketch weave "needle" and connection, can't use magnets cause ferrites are magnetic, minor annoyance when weaving..
-2. Footprint for magnetic latch switch (magnet, 3xpogo, magnet: pcb switches and 3way and gate?), and/or find out how to attack magnets to PCBs.
-3. Switch for external coils
-4. Decide how to drive the coils (VCO + LSD?)
-5. Add simulations to readme
-6. Add index to readme
-
-
-
-
-
-Teaching how bits form bytes and then characters with a hands on approach.
-
-An homage and revival of core rope memories.
-
-Instead of pressing a button to make a letter or touching a screen, you weave a wire. Handwritting, etc
 
 
 
